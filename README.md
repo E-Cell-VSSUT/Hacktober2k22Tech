@@ -27,9 +27,10 @@ git clone <repo link>
 
 # How to contribute to this project!!
 
-You have to follow three simple steps once you have forked and cloned the repository.
+You have to follow four simple steps once you have forked and cloned the repository.
 * Make a folder of your name.
 * Put all your files (HTML,CSS,JS) inside this folder.
 * After completing one task or resolving an issue give a PR.
+* When you are giving a PR make sure to mention the issue number that you have resolved in the commit message. 
 
 All you have to do after this is wait for your PR to be reviewed by the maintainer and merged :v:. 
