@@ -32,5 +32,7 @@ You have to follow four simple steps once you have forked and cloned the reposit
 * Put all your files (HTML,CSS,JS) inside this folder.
 * After completing one task or resolving an issue give a PR.
 * When you are giving a PR make sure to mention the issue number that you have resolved in the commit message. 
+### Demo
+<img src="demo.jpg" >
 
 All you have to do after this is wait for your PR to be reviewed by the maintainer and merged :v:. 
