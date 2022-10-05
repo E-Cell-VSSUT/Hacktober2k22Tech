@@ -1,4 +1,4 @@
-# Starter Project HacktoberFest 2022
+# Starter Project HacktoberFest 2022 :computer:
 
 This project is a totally beginner friendly project. It deals with basics of HTML,CSS and Javascript.
 
