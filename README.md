@@ -39,3 +39,6 @@ You have to follow four simple steps once you have forked and cloned the reposit
 <img src="demo.jpeg" >
 
 All you have to do after this is wait for your PR to be reviewed by the maintainer and merged :v:. 
+
+
+# We allow multiple submissions for an issue , so it isn't a problem if somebody else has resolved the issue, you can give your submission for the same :v:
