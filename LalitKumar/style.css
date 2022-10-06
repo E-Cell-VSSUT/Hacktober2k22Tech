@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    width:100%;
+    margin: 25px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+}
+td,th{
+    padding: 8px;
+    padding-left:10px;
+  }
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+ .heading{
+    text-align: center;
+    color: brown;
+  }
