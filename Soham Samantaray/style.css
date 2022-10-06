@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(pic3.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.container{
+    position: fixed;
+    top: 15%;
+    left: 7%;
+   color: aliceblue;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container h1{
+    font-size: 30px;
+    padding: 7px ;
+    border-bottom: 3px solid rgb(63, 13, 156);
+    display: inline-block;
+}
+.container h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    font-size: 20px;
+}
+ .container input{
+     background: none;
+     color: azure;
+     font-size: 17px;
+     padding: 7px;
+     border: none;
+     border-bottom: 2px solid rgb(63, 13, 156);
+     outline: none; 
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ .btn{
+     cursor: pointer;
+     border-radius: 10px;
+     width: 90px;
+     padding: 10px 21px;
+     margin: 10px 0px;
+     outline: none;
+     background: none;
+     color: azure;
+     border: 1px solid blue;
+ }
+.btn:hover{
+    background: whitesmoke;
+    color: blueviolet;
+}
+.box a{
+   color: aquamarine;
+}
+.box{
+    padding: 10px;
+}
