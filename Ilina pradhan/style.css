@@ -1,0 +1,94 @@
+
+
+
+body{
+    display : flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page{
+    display : flex;
+    flex-direction: column;
+    border: 1px solid black ;
+    align-items: center;
+    margin-top: 2em;
+}
+.top {
+    display: flex;
+    flex-direction: row;
+    background-color: #0096FF;
+    width : 100% ;
+
+  }
+.logo img{
+    height : 8em;
+
+}
+.college-name div{
+    font-size: 2em;
+    color: white;
+}
+.college-name p{
+    font-size: 1.5em;
+    color: white;
+}
+.id{
+    margin-top: 1em;
+    font-size: 2em;
+    color: red;
+}
+.photo img{
+    height : 15em ;
+}
+.name{
+    font-size: 2em;
+    margin: 1em;
+    border : 2px solid green ;
+    width : 90% ;
+    text-align: center;
+}
+.info{
+    font-size: 1.5em;
+}
+.random {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.random img{
+    height : 100px ;
+    margin-left: 20px;
+}
+.site{
+    font-size: 1em;
+    background-color: #0096FF;
+    width : 100% ;
+    text-align: center;
+    color: white;
+}
+
+.personal_info p{
+    font-size: 1.5em;
+
+}
+
+.branch{
+    font-size: 1.5em;
+}
+
+.address{
+    border : 2px solid green ;
+    width : 90% ;
+    text-align: center;
+}
+
+.instruction h4{
+    font-size: 2em;
+    text-align: center;
+}
+
+.instruction p{
+    font-size: 1.1em;
+}
