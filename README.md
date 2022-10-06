@@ -20,6 +20,7 @@ You just have to make 4 contributions during this month long event to be eligibl
 ## Getting started
 
 * Fork this repository (Click the Fork button in the top right of this page, click your Profile Image).
+* Go to *Your repositories* then go to the forked repo you will see a code button, from their copy the repo link.
 * Clone your fork down to your local machine.
 
 ```markdown
