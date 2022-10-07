@@ -1,0 +1,16 @@
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    min-height:80vh;
+    margin:auto;
+    border:1px solid;
+ }
+ .flexbox img {
+    display: block;
+    width: 80%;
+    height: 50%;
+    height: auto; 
+    margin: auto; 
+ }
