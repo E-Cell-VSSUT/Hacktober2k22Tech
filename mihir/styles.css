@@ -1,0 +1,73 @@
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+  color: gray;
+  text-align: center;
+}
+h2 {
+  color: grey;
+  font-size: large;
+  text-align: center;
+}
+h3 {
+  color: grey;
+  font-size: 22px;
+}
+h4 {
+  color: skyblue;
+  text-align: center;
+}
+h5 {
+  color: skyblue;
+  text-align: center;
+  font-size: 35px;
+}
+
+p {
+  color: grey;
+  font-size: medium;
+  font-style: italic;
+}
+.box {
+  max-width: 400px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.image {
+  flex-basis: 40%;
+}
+
+.text {
+  font-size: 15px;
+  vertical-align: middle;
+}
+label {
+  color: gray;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+hr {
+  align-items: center;
+}
+a {
+  color: skyblue;
+}
