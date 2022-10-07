@@ -1,0 +1,8 @@
+.pic{
+    display: flex;
+    justify-content: center;
+}
+.pic img{
+    width: 50%;
+    height: 20%;
+}

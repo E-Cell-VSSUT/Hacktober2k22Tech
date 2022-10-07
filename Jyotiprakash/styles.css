@@ -1,0 +1,26 @@
+body{
+    background-color: #9ab8ea;
+}
+
+.container h1{
+    font-size: 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width:80%;
+    min-height:80vh;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* not really needed with auto margin on img*/
+ }
+ .image img {
+    display: block;
+    width: 80%;
+    min-width:100px;
+    max-width: 350px; 
+   
+ }

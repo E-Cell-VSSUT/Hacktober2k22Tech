@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login-form</title>
+    <link rel="stylesheet" type="text/css" href="/login form/style.css" />
+  </head>
+  <style>
+    body {
+      background-image: url("https://www.freecodecamp.org/news/content/images/size/w2000/2022/02/arrows-2889040_1920.jpg");
+    }
+  </style>
+
+  <body>
+    <div class="middle-box text-center loginscreen animated fadeInDown">
+      <div class="loginbox">
+        <br />
+        <div>
+          <center>
+            <h3 class="logo-name">
+              <img
+                id="img"
+                class="img-responsive img"
+                src="https://2.bp.blogspot.com/-JgduteoM9QQ/V3PElJNo5HI/AAAAAAAAANA/dfC1VOrWE24nG7cnd7PEaDUu3yY1nzlXgCLcB/s1600/new%2Blogo%2Bcopy.png"
+                style="height: 150px; width: 150px"
+              />
+            </h3>
+          </center>
+        </div>
+
+        <div class="container">
+          <header class="header">
+            <h1 id="title" class="text-center">STUDENT LOGIN</h1>
+          </header>
+
+          <form id="login-form">
+            <div class="form-group">
+              <label id="name-label" for="name">Username</label>
+              <br />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Regd. No"
+                required
+              />
+            </div>
+            <br />
+
+            <div class="form-group">
+              <label id="password-field" for="password">Password</label>
+              <br />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-control"
+                placeholder="Password"
+                required
+              />
+              <span
+                toggle="#password-field"
+                class="fa fa-fw fa-eye field-icon toggle-password"
+              ></span>
+            </div>
+            <br />
+            <div class="sub-button">
+              <button type="submit" class="btn btn-primary submit px-3">
+                Log In
+              </button>
+            </div>
+            <div class="form-group">
+              <div class="form-group d-md-flex">
+                <div class="w-50">
+                  <div class="form-group2">
+                    <div class="form-group3">
+                      <br />
+                      <input type="checkbox" checked="" />
+                      <span class="checkmark"></span>
+                      <label class="checkbox-wrap checkbox-primary"
+                        >Remember Me</label
+                      >
+                    </div>
+                    <br />
+                    <div class="w-50 text-md-right">
+                      <a href="#" style="color: rgb(255, 255, 255)"
+                        >Forgot Password</a
+                      >
+                    </div>
+                  </div>
+                  <p class="text-center text-white">
+                    <small
+                      ><br />©
+                      <span id="lblCollegeName"
+                        >Veer Surendra Sai University of Technology</span
+                      ></small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
