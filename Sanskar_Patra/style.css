@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Passions Conflict', cursive;
+}
+nav{
+    background-color: #3dcca3;
+    padding: 13px 14px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+ li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    padding: 7px 31px;
+    color: black;
+    font-size: 3rem;
+}
