@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: #6FB1DB;
+}
+
+#contact {
+    position: absolute;
+    right: -40%;
+}
+
+.navMenu {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+
+.navMenu a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 100px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+    color: #6FB1DB;
+}
+
+.navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: #6FB1DB;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover~.dot {
+    -webkit-transform: translateX(25px);
+    transform: translateX(25px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover~.dot {
+    -webkit-transform: translateX(135px);
+    transform: translateX(135px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover~.dot {
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover~.dot {
+    -webkit-transform: translateX(380px);
+    transform: translateX(380px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
