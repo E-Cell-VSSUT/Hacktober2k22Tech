@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+          <h1 class="heading" id="time"></span></h1>
+          <h3 class="date" id="date"></h3>
+          <div class="search" id="search-form">
+            <input
+              class="searchTerm"
+              autoFocus
+              id="search-input"
+              placeholder="Search"
+              autocomplete="off"
+              required
+            ></input>
+            <button class="search-button" id="search-button" type="button" >
+              search
+            </button>
+          </div>
+          <div class="widget">
+          <div class="wrapper">
+            <div class="weatherInfo">
+              <span class="place" >
+                <i class="fa fa-location-dot"></i>
+                <span id="location">-----</span>,
+                <span id="country">------</span>
+              </span>
+              <br />
+              <div class="weatherIcon">
+              <i class="wi" id="temp-icon"></i>
+              </div>
+              <h1 class="temperature"><span id="temp-value"></span>°C</h1>
+              <span class="weathercondition" id="climate"></span>
+            </div>
+            </div>
+            <div class="detail">
+            <span class="span">Weather details</span>
+              </div>
+            <div class="extra-temp">
+              <div class="temp-info-minmax">
+                <div class="two-sided-section">
+                  <p>
+                    <i class="wi wi-sunset"></i>
+                  </p>
+                  <p class="extra-info-leftside">
+                   <span  id="sunset"></span> PM<br />
+                    Sunset
+                  </p>
+                </div>
+                <div class="two-sided-section">
+                  <p>
+                    <i class="wi wi-humidity"></i>
+                  </p>
+                  <p class="extra-info-leftside">
+                   <span id="humidity">------</span>%<br />
+                    Humidity
+                  </p>
+                </div>
+              </div>
+              <div class="weather-extra-info">
+                <div class="two-sided-section">
+                  <p>
+                    <i class="wi wi-rain"></i>
+                  </p>
+                  <p class="extra-info-leftside">
+                   <span id="pressure"></span> hpa <br />
+                    Pressure
+                  </p>
+                </div>
+                <div class="two-sided-section">
+                  <p>
+                    <i class="wi wi-strong-wind"></i>
+                  </p>
+                  <p class="extra-info-leftside" >
+                    <span id="wind-speed"></span> km/h<br />
+                    Speed
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <script src="index.js"></script>
+</body>
+</html>
