@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    /* padding: 25px; */
+}
+body{
+    background-color: rgb(199, 199, 199);
+}
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .img1{
+    padding-top: 115px;
+    margin-right: 100px;
+}
+img{
+    
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;   
+}
