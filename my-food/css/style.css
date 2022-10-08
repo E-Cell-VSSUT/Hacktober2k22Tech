@@ -1,0 +1,198 @@
+/*css reset*/
+*{
+    padding: 0;
+    margin: 0;
+}
+/* navbar styling*/
+
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+}
+/*navbar styling ::Logo*/
+#logo img{
+    clip-path: circle();
+    width: 124px;
+    height: 85px;
+    margin:-20px -37px;
+
+ 
+}
+#logo{
+    margin: 34px 56px;
+}
+/*navbar list styling*/
+#navbar ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.35rem;
+    position: sticky;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+opacity: 0.4;
+}
+#navbar ul a{
+    color: white;
+   padding: 19px 22px;
+   text-decoration: none;
+   display: block;
+   border-radius: 20px;
+   
+}
+#navbar ul a:hover{
+    color:black;
+    background-color: white;
+   
+}
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 200px;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+  background:url(../home1.jpg) no-repeat center center/cover;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+}
+/*service section*/
+#services{
+    display: flex;
+    padding: 2px;
+    margin: 34px;
+}
+#services .box{
+    border: 2px solid rgb(99, 12, 12);
+    margin: 5px;
+    padding: 2px;
+    border-radius: 22px;
+    background-color: rgb(240, 237, 234);
+    
+  
+    
+}
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+/*heading style*/
+.h-primary{
+    font-size: 3.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    padding: 17px;
+}
+.h-secondary{
+    font-size: 2.5rem;
+    
+    padding: 17px;
+}
+#home p{
+    font-size: 1.5rem;
+    padding: 5px 20px;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+/*button style*/
+#btn{
+    border: 2px solid white;
+    margin: 15px;
+    padding: 6px 25px;
+    border-radius: 9px;
+    background-color: rgb(161, 159, 157);
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 2.2rem;
+    
+}
+.centre{
+    text-align: center;
+}
+.h{
+    font-size: 3.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    padding: 17px;
+}
+#client-services{
+height: auto;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#client-services::before{
+    content: "";
+    position: absolute;
+    background: url(../white.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 356px;
+    z-index: -1;
+   
+    
+}
+.client-item img{
+ height: 115px;
+    padding: 34px;
+
+}
+/* contact section*/
+.h-contact{
+    font-size: 3.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 17px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../contact.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+.contact-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom:  20px;
+}
+.contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+}
+.contact-box label{
+    font-size: 1.5rem;
+    padding: 4px;
+}
+.contact-box form{
+    width: 29%;
+}
