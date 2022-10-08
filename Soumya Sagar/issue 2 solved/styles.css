@@ -1,0 +1,33 @@
+h1{
+    color: rgb(236, 80, 23);
+    background-color:blue;
+    font-size: 70px;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+p{
+    color: rgb(14, 14, 233);
+    font-size: 20px;
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 5px;
+   
+} 
+
+ul{
+    border-width: 5px;
+    border-style: dashed;
+    border-color: darkmagenta;
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+}
+li{
+    list-style-type: none;
+    text-shadow: 1.5px 1.5px #e9e9e9;
+}
+div{
+    border: 2px solid crimson;
+    margin: 20px;
+    padding: 5px;
+}
