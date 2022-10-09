@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Langar', cursive;
+}
+
+.container{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container form{
+    display: none;
+}
+
+.livesRemaining{
+    background-color: rgb(34, 255, 34);
+    width: 100vw;
+    color: #000;
+    text-align: center;
+    padding: 2vh;
+}
+
+.content{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#userNum{
+    width: 40vw;
+    border: 2px solid #151515;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.btn{
+    width: 40vw;
+    height: 10vh;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    border: 1px solid #151515;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: #151515;
+    color: #fff;
+    transition: 400ms;
+}
+
+.btn:hover{
+    background-color: rgb(34, 255, 34);
+    border: none;
+}
+
+#restart{
+    display: none;
+}
+
+span{
+    color: red;
+    font-size: 20px;
+}
+
+#info{
+    text-align: center;
+    font-size: 20px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    background-color: #151515;
+    color: #fff;
+    width: 100vw;
+    text-align: center;
+    padding: 2vh;
+}
+
+footer .fa-heart{
+    color: red;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.youWon{
+    animation: winning 800ms 5;
+}
+
+@keyframes winning{
+    0%{
+        background-color: #fff;
+    }
+    50%{
+        background-color: rgb(34, 255, 34);
+    }
+    100%{
+        background-color: #fff;
+    }
+}
+

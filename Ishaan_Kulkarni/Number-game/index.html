@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description"
+         content="A Simple Number Guessing Game. You will given 6 Chances to Guess a number between 1 to 100"
+         >
+        <meta name="keywords" content="Sagar, game, number guessing, number game">
+        <meta name="author" content="Sagar Sharma">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./public/css/style.css">
+        <title>Number Guessing</title>
+    </head>
+<body>
+    
+    <div class="container">
+        <div class="livesRemaining">
+            Guess Remaining : <span id="guessLeft">5</span>
+        </div>
+        <div class="content">
+
+            <h1>Number Guessing Game</h1>
+            <button id="start" class="btn">Start</button>
+            <div class="box">
+                <form>
+                    <input type="number" id="userNum" min="1" max="100" placeholder="1 - 100">
+                    <input type="submit" value="Check" id="Submit" class="btn">
+                    <br>
+                    <button id="restart" class="btn">Play Again!</button>
+                </form>
+            </div>
+            <p id="info">Guess the number between 1 and 100 <br> All the best!</p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/Sagar-Sharma-7" target="_blank" title="github">Contribute to my  <i class="fab fa-github"></i></a>
+
+        <p>Made with <i class="fas fa-heart" title="love"></i> by Sagar Sharma</p>
+        
+      </footer>
+
+
+    <script src="./public/js/main.js"></script>
+</body>
+</html>
