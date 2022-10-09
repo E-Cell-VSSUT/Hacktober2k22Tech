@@ -1,0 +1,10 @@
+body{
+    background-color: pink;
+}
+.container img{
+    display: block;
+    width: 55%;
+    /* height: auto; */
+    margin: auto;
+    padding: 50px;
+}
