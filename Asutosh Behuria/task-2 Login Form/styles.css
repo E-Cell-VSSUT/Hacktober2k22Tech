@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/image.jpg);
+    /* background-image: linear-gradient(120deg,rgb(46, 34, 172),rgb(228, 76, 158)); */
+    background-size: cover;
+    background-repeat:repeat-y;
+    overflow: hidden;
+    
+}
+.container{
+    width: 400px;
+    margin: 10% auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(241, 247, 254);
+    /* background: none; */
+    /* padding: 5px; */
+    box-shadow: 0 0 15px rgb(73, 56, 78);
+    border-radius: 20px;
+}
+.container h1{
+    text-align: center;
+    /* margin: 25px; */
+    padding: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+    text-shadow: 2px 3px 5px #555;
+    letter-spacing: 3px;
+    color: rgb(50, 47, 47);
+}
+.container input{
+    border: none;
+    outline: none;
+    width: 300px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.949);
+    font-size: 1.2em;
+    border-radius: 10px;
+    padding-left: 35px;
+    margin: 10px;
+    border-bottom: 1px solid rgba(104, 84, 84, 0.949);
+    background: none;
+
+}
+.txt_field input:hover{
+    box-shadow: 2px 2px 5px #555;
+}
+.Login{
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 69%;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: hsl(269, 46%, 32%);
+    color: hsl(212, 87%, 97%);
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.Login:hover{
+    background-color: rgb(29, 122, 35);
+}
+.txt_field span{
+    position: relative;
+}
+span i{
+    position: absolute;
+    top: 0px;
+    left: 23px;
+    color:hsl(269, 46%, 32%) ;
+}
+i{
+    color:hsl(269, 46%, 32%)
+}
+.opt{
+    margin: auto;
+    letter-spacing: 1px;
+}
+.loglink{
+    width: 50%;
+    font-size: 1.7em;
+    padding: 15px 0px;
+    margin: auto;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.loglink i:hover{
+    color: rgb(45, 172, 53);
+}
+.newpage{
+    /* margin-left: 15px; */
+    padding-left: 10px;
+    text-align: left;
+
+}
+ul{
+    list-style: none;
+}
+.newpage li,a{
+    margin-bottom: 6px;
+    text-decoration: none;
+    color: #555;
+}
+.newpage a:hover{
+    color: rgb(232, 100, 100);
+    font-size: 1.1em;
+}
