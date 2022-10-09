@@ -1,0 +1,96 @@
+header{
+    min-height: 50px;
+    text-align: center;
+    
+
+}
+header ul {
+    float: right;
+       list-style: none;
+       
+}
+header a{
+    text-decoration: white;
+    font-size: 30px;
+    padding: 5px;
+    color: springgreen;
+}
+header a:hover{
+      color: steelblue;
+}
+header li{
+    display: inline-block;
+    }
+
+    .title h1{
+        text-align: center ;
+        font-size: 50px;
+        color: white;
+    }
+    body{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(a44.jpg);
+       
+        background-size: cover;
+       
+    }
+    .container-1 {
+        display: flex;
+        justify-content: space-between;
+        
+        border: 2px solid yellow;
+        flex-direction: column;
+    }
+    .box{
+        border:2px solid yellow;
+       
+   
+    }
+    .box h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    .box img{
+        float: left;
+        padding: 1%;
+    }
+    #box1 p { 
+        text-align: center;
+   
+        max-width: 20%;
+        padding-left: 500px;
+        font-size: 25px;
+        color: chartreuse;
+    }
+    #box2 ul { 
+        text-align: center;
+   
+        max-width: 20%;
+        padding-left: 500px;
+        font-size: 25px;
+        color: chartreuse;
+    }
+    #box3 ul { 
+        text-align: center;
+   
+        max-width: 20%;
+        padding-left: 500px;
+        font-size: 25px;
+        color: chartreuse;
+    }
+    h3{
+        color: white;
+    }
+
+ div {
+     display: flex;
+     justify-content: center;
+ }
+ button {
+     height: 50px;
+     width: 50px;
+     margin: 10px;
+     box-shadow: 5px 5px 5px cornflowerblue,
+                  -5px  -5px  -5px cyan;
+                  transition: .3s;
+ }
+ 
