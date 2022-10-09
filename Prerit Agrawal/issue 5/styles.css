@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    margin: 0;
+}
+.container img{
+    position: relative;
+    width: 10%;
+    height: 10%;
+    top: 45%;
+    left: 45%;
+}
