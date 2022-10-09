@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Montserrat";
+}
+:root {
+    --mycolor: rgb(255,0,140)
+}
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: rgb(21,22,26);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+.text {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 40px auto;
+}
+
+
+.social-media {
+    margin: 20px auto;
+}
+.social-media i {
+    padding: 20px;
+    font-size: 25px;
+    color: #fff;
+}
+.social-media i:hover{
+    color: rgb(2,255,171);
+}
+
+@media(max-width:810px){
+    
+    .social-media i {
+        padding: 10px;
+    }
+}
+@media(max-width:610px){
+    
+    .social-media i {
+       font-size: 15px;
+    }
+}
+@media(max-width:470px){
+    .text {
+        font-size: 12px;
+    }
+    
+}
+@media(max-width:330px){
+    .text {
+        font-size: 10px;
+    }
+}
