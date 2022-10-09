@@ -1,0 +1,16 @@
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imgcontainer {
+     width: 50%; 
+     margin: auto;
+  }
+  .imgcontainer img {
+     display: block;
+     width: 100%;
+     max-width: 500px;
+     height: auto; 
+     margin: auto; 
+  }
