@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aqua;
+    padding: 10px;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
