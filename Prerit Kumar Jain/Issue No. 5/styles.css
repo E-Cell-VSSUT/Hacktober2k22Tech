@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+.box {
+    position: relative;    
+}
+
+img {
+    display: block;
+    width: 50%;
+    padding: 10% 0;
+    margin: 0 auto;
+}
