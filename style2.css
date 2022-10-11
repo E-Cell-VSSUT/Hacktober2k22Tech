@@ -1,0 +1,104 @@
+*{
+    margin: 0%;
+    padding: 0%;
+     font-family: 'josefin sans' sans-serifs;
+    box-sizing:border-box;
+}
+.sidebar{
+    height: 100vh;
+    width: 100%;
+    background-image: url(portfolioimage8.jpg);
+    
+    background-size: cover;
+    font-size: 20px;
+}
+nav{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-top: 25px;
+    padding-left:8%;
+    padding-right:8%;
+    font-size: 20px;
+
+
+}
+.logo{
+    color: rgba(180, 21, 201, 0.555);
+    font-size: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+
+}
+nav ul li a{
+    color: rgba(8, 3, 6, 0.849);
+    text-decoration: solid;
+    font-weight: bold;
+    font-size: large;
+    text-transform: none;
+    font-size: 20px;
+    
+    
+}
+nav ul li a:hover{
+    color: rgba(207, 13, 13, 0.87);
+    transition: .5s;
+    transform: scale(1.5);
+}
+.btn{
+    background-color: rgba(241, 20, 20, 0.822);
+    text-decoration: none;
+   font-size: larger;
+    text-transform: none;
+    border: 2px solid transparent;
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+.btn:hover{
+    transform: scale(1.2);
+    color: blue;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: scale(1.3);
+
+}
+h1{
+    color: black;
+    margin: 20px 0px 20px;
+    font-size: 65px;
+}
+.newsletter form{
+    width: 250px;
+    max-width: 100%;
+    position: relative;
+}
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    outline: auto;
+    border-radius: 30px;
+    border: 2px solid;
+
+}.newsletter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: auto;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 15px;
+    background-color: rgb(199, 8, 8);
+    color: black;
+    box-shadow: 0px 0px 5px;
+    top: 6px;
+    right:6px;
+}
+
