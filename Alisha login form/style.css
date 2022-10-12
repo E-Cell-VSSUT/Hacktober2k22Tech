@@ -1,0 +1,128 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,Sans-serif;
+}
+body{
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, hsl(190, 100%, 86%), #f6ba39);
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+.container{
+    max-width: 700px;
+    width: ;
+    height: 450px;
+    padding: 25px 30px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #f6ba39, hsl(190, 100%, 86%));
+    background-repeat: no-repeat;
+}
+.container .heading{
+    font-size: 25px;
+    font-weight:500;
+    position: center;
+    text-align: center;
+    padding: 0 0px 20px 0;
+}
+.container .heading::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+
+}
+.container form .card-details{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .card-details .card-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+.card-details .card-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.card-details .card-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding left: 15px;
+    font size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.card-details .card-box input:focus,
+.card-details .card-box input:valid{
+    border-color: black;
+}
+form .circal-form .circal-title{
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid;
+}
+form .circal-form .category{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form .button{
+    text-align: center;
+}
+form .button input{
+    padding: 10px;
+    margin-top: 10px;
+    height: 100%;
+    width: 50%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, hsl(190, 100%, 86%) ,#f6ba39);
+    
+}
+form .button input:hover{
+    background:linear-gradient(135deg, hsl(190, 100%, 86%) ,#f6ba39)  ;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:584px) {
+.container{
+    max-width: 100%;
+}
+form .card-details .card-box{
+    margin-bottom: 15px;
+    width: 100%;
+}
+form .circal-form .category{
+    width: 100%;
+}
+.container form .card-details{
+    max-height: 300px;
+    overflow: scroll;
+}
+.card-details::_webkit-scrollbar{
+    width: 0%;
+}
+}
