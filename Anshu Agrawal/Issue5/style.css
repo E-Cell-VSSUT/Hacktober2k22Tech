@@ -1,0 +1,16 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+    background-image: url("Images/Spiral-Galaxy.gif");
+    background-repeat: repeat;
+    /* background-position: right bottom, left top; */
+    padding: 15px;
+}
+.obj{
+    display: block;
+    height: 90vh;
+    width: auto;
+    margin: 0px auto;
+}
