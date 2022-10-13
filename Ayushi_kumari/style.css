@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+*
+{
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #131419;
+}
+
+body.light{
+    background-color: #ffffff;
+}
+
+
+.toggle 
+{
+    width: 4.2rem;
+  height: 4.2rem;
+  background-color: #ddd;
+  position: absolute;
+  top: 2.2rem;
+  right: 26rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form.light .toggle
+{
+    color: #222222;
+}
+
+.toggle i
+ {
+    font-size: 3rem;
+    color: #222222;
+  }
+
+.form.light .toggle i
+{
+    color: #777;
+}  
+
+.form
+{
+    position: relative;
+    width: 470px;
+    height: 600px;
+    padding: 40px 40px  60 px;
+    background: #131419;
+    border-radius: 30px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    box-shadow: -10px -10px 20px rgba(255,255,255,0.05),
+                 10px 10px 20px rgba(0,0,0,0.5);
+} 
+
+.form.light
+{
+    background-color: #FAF9F6;
+    box-shadow: -20px -20px 30px rgba(255,255,255,0.01),
+                 10px 10px 20px rgba(0,0,0,0.4);
+}
+
+
+
+
+.form h2
+{
+    padding-top: 19px;
+    color: #c7c7c7;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-size: 33px;
+    font-style: normal;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.form.light h2
+{
+    color: #000000;
+}
+
+.form.input
+{
+   
+    text-align: left;
+    margin-top: 40px;
+    
+    
+}
+
+.form .input .inputBox input.light{
+    background: #FAF9F6;
+
+}
+
+.form.input.inputBox
+{
+    
+    margin-top: px;
+    
+    
+}
+
+.form .input .inputBox label
+{
+    display: block;
+    color:#868686;
+    margin-bottom: 5px;
+    font-size: 17.5px;
+    padding-top: 10px;
+    text-align: start;
+    padding-left: 70px;
+    
+    
+}
+
+.form.light .input .inputBox label
+{
+    color: #000000;
+}
+
+.form .input .inputBox input
+{
+    width: 78%;
+    height: 50px;
+    background: #131419;
+    border: 5px;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: #ffffff;
+    font-size: 18px;
+    padding-left: 20px;
+    color: #03a9f4;
+    box-shadow: inset -4px -4px 8px rgba(255,255,255,0.1),
+                 inset 4px 4px 8px rgba(0,0,0,0.8);
+
+}
+.form .input .inputBox input.light{
+    color: #0ABAB5;
+    font-size: 19px;
+    box-shadow: inset -6px -6px 10px rgba(255,255,255,0.01),
+                 inset 2px 3px 7px rgba(0,0,0,0.4);
+    
+}
+
+
+
+
+.form .input .inputBox input[type="submit"]
+{
+    font-size: 23px;
+    letter-spacing: 2.5px;
+    
+    
+    width: 45%;
+    margin-top: 40px;
+    box-shadow:   -4px -4px 8px rgba(255,255,255,0.1),
+                    4px 4px 8px rgba(0,0,0,0.8);
+}
+
+.form .input .inputBox input[type="submit"]:active
+{
+    color: #006c9c;
+    margin-top: 30px;
+    box-shadow: inset -4px -4px 8px rgba(255,255,255,0.1),
+                inset 4px 4px 8px rgba(0,0,0,0.8);
+     
+}
+
+.form .input .inputBox input::placeholder
+{
+    color: #555;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.form .input .inputBox input[name="messages"]
+{
+    width: 78%;
+    height: 110px;
+    
+}

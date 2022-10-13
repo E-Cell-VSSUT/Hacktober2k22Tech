@@ -1,0 +1,11 @@
+body{
+    overflow: hidden;
+    background-color: rgb(57, 57, 57);
+}
+img{
+    display: block;
+    width: 20%;
+    margin: 15% auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 35px rgb(0, 0, 0);
+}

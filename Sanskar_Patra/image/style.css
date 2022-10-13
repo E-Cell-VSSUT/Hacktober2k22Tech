@@ -1,0 +1,18 @@
+.outer-box{
+    height:400px;
+    width:600px;
+    background-color: rgba(128, 189, 253, 0.66);
+    border-radius: 5px;
+    box-shadow:9px 7px 14px 0px rgba(0,0,0,0.75);
+    position:absolute;
+    top:19%;
+    left:32%;
+    vertical-align:centre;
+ }
+ .inner-box
+ {
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+ }

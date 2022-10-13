@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Poiret+One'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-child">
+    <div class="weather">
+        <div class="input">
+        <input type="text" placeholder="Enter the city" class="input_text">
+        <input type="submit" value="Submit" class="submit">
+        </div>
+        <div class="container">
+            <div class="card">
+              <h1 class="name" id="name"></h1>
+              <p class="temp"></p>
+              <p class="clouds"></p>
+              <p class="desc"></p>
+            </div>
+            </div>
+    </div>
+    </div>
+    <div class="grid-child">
+    <div class="clock">
+        <div>
+            <div class="date"></div>
+            <div class="day"></div>
+        </div>
+        <div class="dot">
+            <div class="dot1"></div>
+        </div>
+        <div>
+        <div class="hour-hand"></div>
+        <div class="minute-hand"></div>
+        <div class="second-hand"></div>
+    </div>
+    <div>
+        <span class="h3">3</span>
+        <span class="h6">6</span>
+        <span class="h9">9</span>
+        <span class="h12">12</span>
+    </div>
+    <div class="diallines"></div>
+    </div>
+    </div>
+    </div>
+  <script type="text/javascript">
+        var diallines=document.getElementsByClassName('diallines');
+        var clockE1=document.getElementsByClassName('clock')[0];
+        for(var i=1;i<60;i++){
+            clockE1.innerHTML+="<div class='diallines'></div>";
+            diallines[i].style.transform="rotate("+6*i+"deg)";
+        }
+        function clock(){
+            var weekday=new Array(7),
+            d=new Date(),
+            h=d.getHours(),
+            m=d.getMinutes(),
+            s=d.getSeconds(),
+            date=d.getDate(),
+            month=d.getMonth()+1,
+            year=d.getFullYear(),
+
+            hDeg=h * 30 + m/2,
+            mDeg=m * 6,
+            sDeg=s * 6,
+
+            hE1=document.querySelector('.hour-hand'),
+            mE1=document.querySelector('.minute-hand'),
+            sE1=document.querySelector('.second-hand'),
+            dateE1=document.querySelector('.date'),
+            dayE1=document.querySelector('.day');
+            
+
+            weekday[0]="Sunday";
+            weekday[1]="Monday";
+            weekday[2]="Tuesday";
+            weekday[3]="Wednesday";
+            weekday[4]="Thursday";
+            weekday[5]="Friday";
+            weekday[6]="Saturday";
+
+
+            var day=weekday[d.getDay()];
+            hE1.style.transform="rotate("+hDeg+"deg)";
+            mE1.style.transform="rotate("+mDeg+"deg)";
+            sE1.style.transform="rotate("+sDeg+"deg)";
+            
+            dateE1.innerHTML=date+"/"+month+"/"+year;
+            dayE1.innerHTML=day;
+        }
+        setInterval("clock()",100);
+    </script>
+    <script src="dynamic.js"></script>
+    <footer>
+        <p>Weather and Analog clock</p>
+    </footer>  
+</body>
+</html>

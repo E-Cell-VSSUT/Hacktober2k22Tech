@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+        header{
+            width: 100%;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header ol{
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            list-style: none;
+        }
+        header ol a,header a{
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+        }
+        .logo{
+            font-size:19px;
+            padding: 10px 20px;
+            border-radius: 10px  0px 10px 0px;
+             margin: 0 5px;
+            transition:  .3s all ease-in;
+        }
+        header ol a li{
+            font-size:17px;
+            padding: 10px 20px;
+            border-radius: 10px  0px 10px 0px;
+             margin: 0 5px;
+            transition:  .3s all ease-in;
+        }
+        header ol a li:hover{
+            background-color: white;
+            color: black;
+        }
+        .checkBtn{
+            display: none;
+        }
+                @media only screen and (max-width: 665px) {
+            .checkBtn{
+              display: block;
+             width: 25px;
+             height: 25px;
+             cursor: pointer;
+             position: relative;
+             appearance: none;
+             -webkit-appearance:  none;
+        }
+        .checkBtn::before{
+content: '\f0c9';
+font-family: 'Font Awesome 5 Free';
+font-weight: 700;
+font-size: 1.5em;
+color: white;
+        }
+        .checkBtn:checked::before{
+            content: '\f00d';
+    }
+
+              header ol{
+     position: absolute;
+            width: 100%;
+            top: 60px;
+            left: 0;
+            z-index: 100;
+            padding: 1.2em;
+            background-color: black;
+            flex-direction: column;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            transition: .4s clip-path;
+        }
+        .checkBtn:checked ~ ol{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+         header ol a li{
+            margin: 5px 0;
+         }
+         header ol::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            z-index: 100;
+            height: 5px;
+            background-color: grey;
+            top: 98%;
+            left: 0;
+         }
+  }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="Own Responsive Navbar.html" class="logo">Logo</a>
+        <input type="checkbox" class="checkBtn" />
+        <ol>
+            <a href="#">
+                <li>About</li>
+            </a>
+            <a href="#">
+                <li>Services</li>
+            </a>
+            <a href="#">
+                <li>Projects</li>
+            </a>
+            <a href="#">
+                <li>Contact</li>
+            </a>
+            <a href="#">
+                <li>Career</li>
+            </a>
+        </ol>
+    </header>
+</body>
+
+</html>

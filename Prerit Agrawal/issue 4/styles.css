@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(30, 37, 30);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container img{
+    width: 200px;
+    height: 130px;
+}

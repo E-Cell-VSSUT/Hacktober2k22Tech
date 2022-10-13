@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(34, 174, 92);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.container img{
+    width: 50%;
+    padding: 30px;
+    margin: 75px;
+}
