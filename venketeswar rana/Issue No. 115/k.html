@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="container">
+        <h1>Payment Form</h1>
+        <hr>
+        <h2>Contact Information</h2>
+        <p>Name: <input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                Male <input type="radio" name="gender" id="gender">
+                Female<input type="radio" name="gender" id="gender">
+            </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="100" rows="8"></textarea></p>
+        <p>Email: <input type="email"></p>
+        <p>Phone No.: <input type="number"></p>
+        <h2>Payment Information</h2>
+        <p>
+            Card type:
+            <select name="cardtype" id="101" required>
+                <option value="">----Select a card type----</option>
+                <option value="Visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Mastercard">Mastercard</option>
+            </select>
+        </p>
+        <p>
+            Card Number: <input type="number" name="card_number" id="card_number" required>
+        </p>
+        <p>
+            Expiration date: <input type="date" name="date" id="date" required>
+        </p>
+        <p>
+            CVV: <input type="password" name="cvv" id="cvv" required>
+        </p>
+        
+    </form>
+    <a class="sumbit" href="index.html"><p><input type="submit"></p></a>
+</body>
+</html>
