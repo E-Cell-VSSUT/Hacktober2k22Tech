@@ -1,0 +1,100 @@
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: CornflowerBlue;
+    color: white;
+    padding: 10px;
+    display: flex;
+    height: 200vx;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.click {
+    font-family: Bookman, URW Bookman L, serif;
+    font-size: 30px;
+    text-align: left
+}
+
+.container {
+
+    width: 30%;
+    height: 90%;
+    border-radius: 30px;
+    padding: 25px 25px;
+    background: rgb(11, 3, 147);
+    background: linear-gradient(312deg, rgba(11, 3, 147, 1) 0%, rgba(8, 8, 167, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+.container h3 {
+    align-items: center;
+}
+
+.container .contact {
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    padding: 0 0 0 0;
+}
+
+
+form .form_details .border_box {
+
+    margin-bottom: 15px;
+    margin-right: 15px;
+    /*margin-left: 15px;*/
+
+}
+
+
+.click h6 {
+    text-decoration: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form .button1 {
+    text-align: center;
+    box-shadow: 40px grey;
+}
+
+form .button1 input {
+
+    padding: 8px 0;
+    margin-top: 10px;
+    height: 50%;
+    width: 100%;
+    outline: none;
+    color: white;
+    border: 0;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+form .button1 input:hover {
+    background-color: rgb(144, 104, 3);
+}
+
+form .button2 input {
+
+    padding: 8px 0;
+    margin-top: 10px;
+    height: 50%;
+    width: 100%;
+    outline: none;
+    color: white;
+    border: 0;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: green;
+}
+
+ form .button2 input:hover {
+    background-color: rgb(1, 84, 1);
+}
