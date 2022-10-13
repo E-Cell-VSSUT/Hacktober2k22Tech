@@ -1,0 +1,114 @@
+.login-page{
+    width: 300px;
+    padding: 10%;
+    margin: auto;
+}
+.login{
+    position: relative;
+    padding: 45px;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto 60px;
+    background: white;
+    text-align: center;
+    width: 220px;
+    height: 270px;
+    display: block;
+    transition: 0.4s;
+}
+body{
+    background-image: linear-gradient(to right,#EE82EE,#0000FF,#008000,#FFFF00,#FFA500,#FF0000);
+}
+input[type=text],input[type=password]{
+
+    padding: 5px;
+    background-color: cornsilk;
+    border: 2px solid blue;
+    width: 160px;
+    transition: width 0.4 ease-in-out;
+
+}
+
+input[type=text]:focus,input[type=password]:focus{
+
+    border: 2px solid black;
+    width: 240px;
+    border-radius: 20px;
+    background-color: springgreen;
+    color: white;
+    height: 40px;
+}
+.h1{
+    font-size: 2rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+p{
+    color:black;
+    font-weight: bold;
+}
+.log{
+    background-image: linear-gradient(to right,#FF8008 0%,#FFC837 51%,#FF8008 100%);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 9px;
+    width: 100px;
+    
+}
+.alog{
+    color: red;
+    text-decoration: none;
+}
+.signup-page{
+    width: 300px;
+    padding: 10%;
+    margin: auto;
+
+}
+.register{
+    position: absolute;
+    top: 170px;
+    left: 620px;
+    padding: 45px;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto 60px;
+    background:black;
+    text-align: center;
+    width: 220px;
+    height: 270px;
+    display: block;
+    transition: 0.4s;
+
+}
+.signup{
+    font-size: 1.9rem;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.asign{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    color: #008000;
+}
+
+.signbtn{
+    background-image: linear-gradient(to right,#CB3066,#16BFFD);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    
+
+}
