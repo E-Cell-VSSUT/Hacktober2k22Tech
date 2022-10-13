@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+       rel="stylesheet" 
+       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+       crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style1.css">
+    <title>OTP Verification Form</title>
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center container">
+        <div class="card py-5 px-3">
+            <h5 class="m-0">Mobile Phone Verification</h5>
+            <span class="Mobile-text"
+             >Enter the code we just send on your moblie phone
+             <b class="text-color">91+8758xxxxxx</b>
+            </span>
+            <div class="d-flex flex-row mt-5">
+                <input type="text" class="form-control" autofocus="" maxlength="1">
+                <input type="text" class="form-control" maxlength="1">
+                <input type="text" class="form-control" maxlength="1">
+                <input type="text" class="form-control" maxlength="1">
+            </div>
+
+            <div class="text-color mt-5">
+               <span class="d-block mobile-text" id="countdown"></span>
+               <span class="d-block mobile-text" id="resend"></span>
+            </div>
+            <button type="submit" class="btn" onclick="openPopup()">submit</button>
+            <div class="popup" id="popup">
+                <img src="img.png">
+                <h2>Thank You!</h2>
+                <p>Your Payment is successfull. Thanks!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+            
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
