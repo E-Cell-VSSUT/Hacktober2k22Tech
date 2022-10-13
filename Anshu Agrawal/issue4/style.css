@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url("./Images/school-building-educational-institution-college_107791-1051.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.img{
+    height: 50vh;
+    width: 30vw;
+    margin-top: 200px;
+}
+.element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
