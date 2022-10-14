@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: url(charity1.jpg)no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+nav {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    color: rgb(254, 252, 249);
+    background: rgba(22, 246, 246, 0.358);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 0;
+    display: inline-block;
+}
+
+
+nav ul {
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+
+}
+
+nav ul li a {
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+
+    color: rgb(255, 255, 255);
+
+}
+
+a.active,
+a:hover {
+    color: aqua;
+}
+
+label #btn,
+label #cancel {
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+
+}
+
+.child {
+    margin: 30px;
+    display: flex;
+}
+
+@media (max-width:1118px) {
+    nav img {
+        left: 8%;
+    }
+}
+
+@media(max-width:944px) {
+    nav img {
+        left: 6%;
+        top: 20px;
+        width: 190px;
+    }
+
+    nav ul li a {
+        font-size: 17px;
+    }
+}
+
+@media(max-width:860px) {
+    label #btn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(22, 246, 246, 0.358);
+        top: 80px;
+        text-align: center;
+        left: -100%;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    #check:checked~label #btn {
+        display: none;
+    }
+
+    #check:checked~label #cancel {
+        display: block;
+    }
+}

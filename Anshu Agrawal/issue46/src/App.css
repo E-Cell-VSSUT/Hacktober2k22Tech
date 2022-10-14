@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+.nav{
+  display: flex;
+  background-color: #dd1717;
+  justify-content: center;
+  align-items: center;
+  border-radius:10px 10px 0px 0px;
+  text-indent: 10px; 
+  color: whitesmoke;
+}
+.img{
+  height: 40px;
+  width: 55px; 
+}
+.card{
+  height: 350px;
+  display: flex;
+  align-items: center;
+  padding: 30px 10px 20px 20px;
+  background-color: 	#FFFAFA;
+  margin-top: 20px;
+  box-shadow: 10px 10px 10px 0px ;
+}
+.card--location--logo{
+  width:30px ;
+  height:30px;
+  position:relative;
+  top: 10px
+}
+.card--img{
+  height: 90%;
+  width: 30%;
+  margin-right:15px; 
+  border-radius:10px;
+}
+.card--location{
+    font-family: "Trirong", serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 20px;
+}
+.card--map{
+   color:grey;
+   font-family: "Trirong", serif;
+    font-weight: 500; 
+}
+.card--description{
+   font-family: "Trirong", serif;
+}
+
+

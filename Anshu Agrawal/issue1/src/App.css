@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color:  black;
+}
+.card{
+position: absolute;
+width: 550px;
+height: 950px;
+left: 35%;
+top: 53px;
+
+background: #23252C;
+}
+.card--1{
+position: absolute;
+width: 317px;
+height: 317px;
+left: 116px;
+top: 44px;
+
+background: #1A1B21;
+border-radius: 10px 10px 0px 0px;
+}
+.card--2{
+  position: absolute;
+width: 317px;
+height:fit-content;
+left: 116px;
+top: 361px;
+
+background: #1A1B21;
+}
+.card--3{
+  position: absolute;
+width: 317px;
+height: 64px;
+left: 116px;
+top: 745px;
+background: #161619;
+border-radius: 0px 0px 10px 10px;
+padding: 20px 20px 10px 60px;
+}
+.img{
+  width: 317px;
+  height: 317px
+}
+.card--2-intro{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.card--2-intro >h2{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.card--2-intro > h6{
+  position: absolute;
+width: 178.06px;
+height: 14.19px;
+left: 70px;
+top: 35px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12.8px;
+line-height: 15px;
+text-align: center;
+
+color: #F3BF99;
+}
+.card--2-button{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.button1{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 13px 9px 11px;
+gap: 8px;
+width: 115px;
+height: 34px;
+
+
+  }
+.button1>img{
+height: 10px;
+width: 10px;
+}
+.button2>img{
+height: 10px;
+width: 10px;
+}
+.button2{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 13px 9px 11px;
+gap: 8px;
+width: 115px;
+height: 34px;
+background-color:#5093E2 
+}
+.card--2-about >h1{
+  
+ font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+color: #F5F5F5;
+}
+.card--2-about > p{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10.24px;
+line-height: 150%;
+color: #DCDCDC;
+
+}
+.card--2-main{
+ padding: 0px 35px 10px; 
+}
+card--3-img{
+  padding: 100000px;
+}
+.img1{
+  height: 25px;
+  width: 25px;
+background: #918E9B;
+margin-right:30px  
+}
+.img2{
+  height: 25px;
+  width: 25px;
+background: #918E9B;
+margin-right: 30px
+}
+.img3{
+  height: 25px;
+  width: 25px;
+background: #918E9B;
+margin-right: 30px
+}
+.img4{
+  height: 25px;
+  width: 25px;
+background: #918E9B;
+}

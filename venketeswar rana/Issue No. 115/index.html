@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <h1 class="main_heading">Payment Form</h1>
+            <hr>
+            <h2>User Information</h2>
+            <p>Name: * <input type="text" name="name" required placeholder="name"></p>
+            <p>
+              <fieldset>
+                   <legend>Gender</legend>
+                   male <input type="radio" name="gender" id="male">
+                   female <input type="radio" name="gender" id="female">
+              </fieldset>
+            </p>
+            <p>
+                Address: 
+                <textarea placeholder="enter your address" name="address" id="address" cols="100" rows="9"></textarea>
+            </p>
+            <p>Email: *<input type="email" name="email" id="email" required></p>
+            <p>Pincode: *<input type="number" name="pincode" id="pincode" required></p>
+            <h2>Payment Information</h2>
+            <p> Card Type:
+                <select name="card_type" id="card_type">
+                    <option value="">---select a Card Type</option>
+                    <option value="visa"> visa</option>
+                    <option value="rupay">Rupay</option>
+                    <option value="mastercard">Mastercard</option>
+                </select>
+            </p>
+            <p>
+                card number*<input type="number" name="card_number" id="card_number" required>
+            </p>
+            <p>
+                Expiration Date: <input type="date" name="exp_date" id="exp_date" required>
+            </p>
+            <p>
+                CVV <input type="password" name="cvv" id="cvv" required>
+            </p>
+        </form>
+        <a class="sumbit" href="new.html"><p><input type="submit"></p></a>
+    </div>
+</body>
+</html>

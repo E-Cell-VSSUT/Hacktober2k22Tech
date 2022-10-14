@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    padding: 10px 20px;
+    white-space: nowrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.box {
+    width: 100vw;
+    height: 5vh;
+    background-color: lightgrey;
+}
+
+.list li:hover {
+    text-decoration: underline;
+}
