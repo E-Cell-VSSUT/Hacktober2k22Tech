@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Roboto+Mono:wght@100&family=Sen:wght@400;700;800&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Sen", sans-serif;
+}
+
+.footer {
+  height: 300px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  background-color: antiquewhite;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 20px
+}
+
+.links li {
+  font-size: 1.5rem;
+  margin-bottom: 10px
+}
+
+.links li a {
+  color: #000;
+}
+
+.logo {
+  width: 30%;
+}
+
+.quickLinks {
+  width: 30%;
+}
+
+.quickContacts {
+  width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 0px 20px;
+  }
+
+  .logo,
+  .quickLinks,
+  .quickContacts {
+    width: 100%;
+  }
+}
