@@ -1,0 +1,13 @@
+.container {
+  width: 550px;
+  height: 150px;
+  background: #eaeaea;
+}
+
+.center__relative {
+  position: relative;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
