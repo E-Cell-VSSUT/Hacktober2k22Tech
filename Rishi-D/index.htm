@@ -1,0 +1,46 @@
+<body>
+    <div class="container">
+        <form action="">
+            
+                <legend>
+                    <h1 class="main_heading">Payment Form</h1>
+
+                </legend>
+                <hr>
+                <h2>Contact Information</h2>
+               
+                    
+                    <p>Name: <input type="text" name="name" required placeholder="Your Name"></p>
+                
+                <fieldset>
+                    <legend>Gender</legend>
+                    
+                    <p>
+                        Male <input type="radio" name="gender" id="male" required>
+                        Female <input type="radio" name="gender" id="female" required>
+                    </p>
+                </fieldset>
+                <p>Address: <textarea name="address" id="address" cols="30" rows="10"></textarea required></p>
+        <p>Email: <input type="email" name="email" id="email"required placeholder="email@gmail.com"></p>
+        <p>Pincode: <input type="number" name="number" id="number"required placeholder="248001"></p>
+
+        <legend><h2>Payment Information</h2></legend>
+        <hr>
+        <p>
+            Card Type: <select name="card_type" id="card_type"required>
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="upi">UPI</option>
+                <option value="payal">PayPal</option>
+            </select>
+        
+        </p>
+        <p>Card Number: <input type="number" name="card_number" id="card_number"required placeholder="123 456 789 101"></p>
+        <p>Expiration Date: <input type="date" name="exp_date" id="exp_date"required dd-mm-yyyy></p>
+        <p>CVV <input type="password" name="cvv" id="cvv"required placeholder="123"></p>
+        <input type="button" value="Pay Now">
+        
+        
+    </form>
+</div>
+</body>

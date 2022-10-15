@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+
+    <section class="header">
+    <div class="nav_bar">
+        
+      <nav>
+        <a href="index.html"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+           <li> <a href="" >HOME</a></li>
+           <li> <a href="#course">ABOUT </a></li>
+           <li> <a href="">SECTOR</a></li>
+           <li> <a href="">CONTACT US</a></li>
+            
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+     
+     </div>
+     
+     
+      <section class="contact-us">
+        <div class="text box">
+            <h1 style="color: black;">SOUNDWAVES</h1>
+            
+
+           
+            </div>
+        <h2 style="color: rgb(13, 13, 12);">FILL THE FORM</h2>
+           
+         <div class="contact-col">
+           
+           <form action="">
+           <input type="text" placeholder="Enter your name" required>
+           <input type="email" placeholder="Enter your email address" required>
+           <textarea rows="2" placeholder="The instrument" required></textarea>
+           <textarea rows="2" placeholder="The song" required></textarea>
+           
+           <button type="submit" class="hero-btn" >SUBMIT</button>
+           </form>
+         </div>
+         
+       </section>
+           
+         
+          </section>
+          <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+              navLinks.style.right="0";
+            }
+            function hideMenu(){
+              navLinks.style.right="-200px";
+            }
+          </script>
+           <section class="course">
+            <h1>DETAILS</h1>
+            
+            <div class="row">
+              <div class="course-col">
+                <h3>ABOUT</h3>
+                <p>It is a community event with performances of singing and instrument playing that is often presented with a theme such as musical genre (e.g., rock, blues, folk, jazz, classical music), nationality, locality of musicians, or holiday.
+                </p>
+              </div>
+              <div class="course-col">
+                <h3>REQUIRED</h3>
+                <p>The instrumentalists should bring their own instrument .The singers can sing the song as per to their choice but in the second round a song would be given by the judges .</p>
+              </div>
+              
+          </section>
+
+          
+          
+     </body>
+</html>
