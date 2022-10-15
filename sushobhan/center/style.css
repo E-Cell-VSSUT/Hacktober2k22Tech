@@ -1,0 +1,37 @@
+.rect {
+  /* Basic styles to demo */
+  background-color: red;
+  padding: 10px;
+}
+
+.center__horizontal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.center__vertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center__both {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 550px;
+  height: 150px;
+  background: #eaeaea;
+}
+
+.center__relative {
+  position: relative;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
