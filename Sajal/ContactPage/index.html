@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact Page</title>
   </head>
   <body>
     <div class="container">
       <h1 class="heading">Contact Us</h1>
-    </div>
 
-    <div class="completeForm">
-      <form action="/submit_page.php">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your name..." />
+      <div class="row">
+        <div class="completeForm">
+          <div class="column" id="image">
+            <img
+              src="https://i.pinimg.com/750x/e0/b3/3c/e0b33cd17c1f18be2943d0a0f2ded707.jpg"
+            />
+          </div>
 
-        <label for="mail">Email</label>
-        <input type="text" id="mail" placeholder="Your mail ID..." />
+          <div class="column">
+            <form action="/submit_page.php">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your name..." />
 
-        <label for="country">Country</label>
-        <select id="country">
-          <option>India</option>
-          <option>USA</option>
-          <option>Germany</option>
-        </select>
+              <label for="mail">Email</label>
+              <input type="text" id="mail" placeholder="Your mail ID..." />
 
-        <label for="subject">Write Something</label>
-        <textarea
-          id="subject"
-          placeholder="Write whatever you wanna write man"
-        ></textarea>
+              <label for="country">Country</label>
+              <select id="country">
+                <option>India</option>
+                <option>USA</option>
+                <option>Germany</option>
+              </select>
 
-        <input type="submit" />
-      </form>
+              <label for="subject">Write Something</label>
+              <textarea
+                id="subject"
+                placeholder="Write whatever you wanna write man"
+              ></textarea>
+
+              <input type="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
