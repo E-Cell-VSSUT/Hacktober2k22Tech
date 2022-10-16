@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Contact Us</h1>
+    </div>
+
+    <div class="completeForm">
+      <form action="/submit_page.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name..." />
+
+        <label for="mail">Email</label>
+        <input type="text" id="mail" placeholder="Your mail ID..." />
+
+        <label for="country">Country</label>
+        <select id="country">
+          <option>India</option>
+          <option>USA</option>
+          <option>Germany</option>
+        </select>
+
+        <label for="subject">Write Something</label>
+        <textarea
+          id="subject"
+          placeholder="Write whatever you wanna write man"
+        ></textarea>
+
+        <input type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
