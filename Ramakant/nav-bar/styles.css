@@ -1,0 +1,74 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+    background: linear-gradient(#ffffff,#BDD4E7);
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    
+  }
+  .nav {
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(#02aab0,#00cdac);
+    position: relative;
+    border-radius: 10px;
+  }
+  .nav > .nav-header {
+    display: inline;
+  }
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: rgb(236, 229, 229);
+    font-weight: 550;
+    font-family:sans-serif;
+    padding: 10px 10px 10px;
+  }
+
+  .nav > .nav-btn {
+    display: none;
+  }
+
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  .nav > .nav-links > ul li a{
+    display: block;
+    padding: 0 8px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+
+  }
+  .nav > .nav-links > ul{
+    padding: 0;
+    margin-top: 5px;
+    list-style: none;
+    position: relative;
+
+  }
+  .nav > .nav-links > ul li{
+    display: inline-block;
+  }
+  .nav > .nav-links > ul li:hover{
+      background-color: #02aab0;
+      border-radius: 5px;
+  }
+
+  .nav > #nav-check {
+    display: none;
+  }
+
+ .nav .nav-links ul a.icon{
+ margin-left: 80px;
+ margin-right: 10px;
+ }
