@@ -1,0 +1,22 @@
+.box{
+    height: 200px;
+    width: 500px;
+    border: 1px solid;
+    margin: 10px;
+    text-align: center;
+    padding-top: 20px;
+    transform: translateX(-200px);
+    opacity: 0;
+}
+
+.boxes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box.show{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all .5s;
+}
