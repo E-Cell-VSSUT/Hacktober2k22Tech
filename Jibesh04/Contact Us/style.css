@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(25deg, #ffffff, #ffffff, #98f4fa);
+    color: #ffffff;
+}
+#contact_body{
+    min-height: 80vh;
+    color: #000000;
+}
+#contact_body h2{
+    margin: 10vh auto 5vh auto;
+    text-align: center;
+}
+.blank{
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+}
+/* #contact_body .line_{
+    height: 2px;
+    margin: 2vh 0 0 0;
+    border-radius: 20%;
+    position: relative;
+    width: 10vw;
+    background-color: #F3B762;
+} */
+.persons{
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.person{
+    text-align: center;
+    margin: 5vh 5vw;
+}
+.person img{
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+#contact_us{
+    width: 100vw;
+    align-self: flex-end;
+    max-height: 300px;
+    background: linear-gradient(25deg, #0C354F, #000000);
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sub_cover{
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    display: flex;
+    margin: 5vh 0;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+h3{
+    padding-bottom: 5px;
+}
+p{
+    padding-top: 5px;
+}
+.col:nth-child(3) .block{
+    margin-top: 10px;
+}
+a{
+    padding: 8px 10px;
+    color: #ffffff;
+    border-radius: 40%;
+    transition: .3s ease;
+}
+a:nth-child(1):hover{
+    color: #0077B5;
+    background: radial-gradient(#ffffff, #0077B5);
+}
+a:nth-child(2):hover{
+    color: #C93B6F;
+    background: radial-gradient(#ffffff,  #F3B762);
+}
+a:nth-child(3):hover{
+    color: #1DA1F2;
+    background: radial-gradient(#ffffff, #1DA1F2);
+}
+.line{
+    height: 2px;
+    width: 10vh;
+    background-color: #F3B762;
+    border-radius: 20%;
+    margin: 5px 0;
+}
+@media all and (max-width: 500px){
+    body{
+        font-size: small;
+    }
+}
+@media all and (max-width: 350px){
+    #contact_us{
+        max-height: 500px;
+    }
+    .row{
+        flex-direction: column;
+        margin-left: 20vw;
+    }
+    .sub_cover{
+        flex-direction: column;
+    }
+    .col{
+        margin-top: 5vh;
+        margin-bottom: 0;
+    }
+    .col:nth-child(3){
+        margin-bottom: 5vh;
+    }
+}
