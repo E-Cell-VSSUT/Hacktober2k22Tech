@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .header{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(250, 251, 240, 0.7),rgba(184, 175, 67, 0.7)),url(https://images.unsplash.com/photo-1585771724684-38269d6639fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+   background-position: center;
+   background-size: cover ;
+  }
+  
+  .nav_bar{
+    z-index: 1000;
+    position: fixed;
+  }
+  
+  .header img{
+    
+        width:10%;
+        float:left;
+        line-height: 100px;
+      }
+      .header img a{
+        text-decoration:none;
+        font-size: 30px;
+        font-family: Montserrate;
+        color: rgb(32, 34, 26);
+        letter-spacing: 2px;
+      }
+      
+  
+  
+  nav{
+    
+      overflow: hidden;
+      background-color: rgb(222, 231, 94);
+      position: fixed;
+      top: 0;
+      width: 93%;
+      left: 0;
+          
+      display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img{
+    width: 150px;
+  }
+  .nav-links{
+    flex: 1;
+    text-align: right;
+    
+  }
+  .nav-links ul li {
+    color: rgb(237, 242, 247);
+      cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #272822;
+    display: block;
+    margin:auto;
+  
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+  
+  
+  .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(35, 39, 25);
+    border: 1px solid #060606;
+    padding: 12px 47px ;
+    font-size: 13px;
+    background-image: linear-gradient(rgba(67, 69, 35, 0.7),rgba(184, 175, 67, 0.7));
+    position: relative;
+    cursor: pointer;
+    border-radius: 300px;
+  }
+  .hero-btn:hover{
+    border: 1px solid #c8d237;
+    background-color: #060506;
+    color: aliceblue;
+    transition: 0.6s;
+  }
+  nav .fa{
+    display: none;
+  }
+  
+  @media(max-width:700px){
+    
+    .nav-links ul li {
+      display: block;
+    }
+    .nav-links{
+      position: fixed;
+      background: #cedd9d;
+      height: 100vh;
+      width:100px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 0.6s;
+    }
+    nav .fa{
+      display: block;
+      color: rgb(26, 29, 13);
+      margin: 10px;
+      font-size: 20px;
+      cursor: pointer;
+
+    }
+}
+    .course{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+      }
+      h1{
+        color: #24251c;
+        font-size: 36px;
+        font-weight: 600;
+      }
+      p{
+        color:#1f1f1d;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 42px;
+        padding: 10px;
+      }
+      .row{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .course-col{
+        max-width: 500px;
+        flex-basis: 56%;
+        background: #e0ebc6;
+        border-radius: 20px;
+        margin-bottom: 21%;
+        padding: 20px 12px;
+        box-sizing: content-box;
+        transition: 0.5s;
+      }
+      h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+      .course-col:hover{
+      box-shadow: 0 0 20px 0px rgb(90, 103, 16);
+      }
+      @media(max-width:700px){
+        .row{
+          flex-direction: column;
+        }
+      }
+      .contact-us{
+        margin-top: 30%;
+        background-position: center;
+        background-size: cover ;
+        width: 80%;
+        margin: auto;
+        padding-top: 10%;
+      }
+      .contact-col{
+        flex-basis: 48%;
+        margin-bottom: 60px;
+      }
+      .contact-col div{
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+      }
+      .contact-col input, .contact-col textarea{
+        background-image: linear-gradient(rgba(250, 251, 240, 0.7),rgba(184, 175, 67, 0.7));
+        width: 80%;
+        padding: 25px;
+        margin-bottom: 27px ;
+        outline: none;
+        border: 1px solid #1e2114;
+        box-sizing: border-box;
+        border-radius: 10px;
+      }
+      @media (max-width:700px) {
+        .contact-col h1{
+          font-size: 20px;
+        }
+        .contact-us{
+            margin-top: 40%;
+            background-position: center;
+            background-size: cover ;
+            width: 80%;
+            margin: auto;
+            padding-top: 20%;
+        }
+      }

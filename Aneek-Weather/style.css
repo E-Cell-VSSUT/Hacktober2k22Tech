@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background:#222 ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background:rgba(0, 0, 0, 0.799);
+    color: white;
+    padding:30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right:188px
+}
+button{
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: rgba(253, 235, 235, 0.785);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    background-color: aliceblue;
+}
+input{
+    border: none;
+    outline: none;
+    padding: 0.8em;
+    border-radius: 18px;
+    background-color: rgba(253, 235, 235, 0.785);
+    font-family: inherit;
+}
+input:hover{
+    background-color: aliceblue;
+}
+.temp{
+    margin: 0;
+    font-size:x-large
+}
+.description{
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+}
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+}

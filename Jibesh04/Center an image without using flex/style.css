@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    margin-left: 50vw;
+    margin-top: 50vh;
+    transform: translate(-50%, -50%);
+}

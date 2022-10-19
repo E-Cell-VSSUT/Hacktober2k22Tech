@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kdam+Thmor+Pro&family=Prompt&display=swap');
+*{
+    margin: 0;  
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(67, 56, 56);
+}
+.contact{
+    
+    position: relative;
+    top: 650px;
+    height: 65px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+}
+
+.logo img:hover{
+    cursor: pointer;
+    animation: shake 0.5s linear 0s 1 normal;
+}
+@keyframes shake {
+    10% {transform: rotate(15deg);}
+    20% {transform: rotate(-15deg);}
+    30% {transform: rotate(15deg);}
+    40% {transform: rotate(-15deg);}
+}

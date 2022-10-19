@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@500&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+
+            <ul>
+                <li><a class="active" href="#"><strong>HOME</strong></a></li>
+                <li><a href="#"><strong>ABOUT </strong></a></li>
+                <li><a href="#"><strong>SECTORS</strong></a></li>
+                <li><a href="# "><strong>CONTACT US</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <div class="container">
+        <h1 text-align="center">CONTACT US</h1>
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
+
+
+</body>
+
+</html>
