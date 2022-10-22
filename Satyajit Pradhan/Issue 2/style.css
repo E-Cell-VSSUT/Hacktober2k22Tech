@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(45deg,rgb(33, 86, 210),rgb(57, 236, 147));
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px;
+}
+.container h2{
+    text-align: center;
+    font-size: 30px;
+}
+#submit{
+    background: rgb(51, 168, 207);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 70px;
+}
+.bottom a{
+    margin: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+form{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 80px;
+    margin: auto;
+}
+form input{
+    width: 100%;
+}
