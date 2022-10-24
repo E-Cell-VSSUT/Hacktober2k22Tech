@@ -1,0 +1,131 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  text-align: center;
+  font-family: Montserrat;
+}
+.wrapper{
+  width: 1170px;
+  margin: 0 auto;
+}
+header{
+  height: 100px;
+  background-color: #262626;
+  width:100%;
+  z-index: 12;
+  position: fixed;
+}
+.logo{
+  width:10%;
+  float:left;
+  line-height: 100px;
+}
+.logo a{
+  text-decoration:none;
+  font-size: 30px;
+  font-family: Montserrat;
+  color: white;
+  letter-spacing: 2px;
+}
+nav{
+  float: right;
+  line-height: 100px;
+}
+nav a{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Montserrat;
+  color:white;
+  margin:0 10px;
+  letter-spacing: 1px;
+}
+.banner-area{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 80px;
+  bottom: 500px;
+  background-image: url(https://preview.redd.it/afhhcswvk9821.jpg?auto=webp&s=b59ff45be78dc6be056de6adb91e17ad53f9dfbb);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+
+}
+.banner-area h1{
+  padding-top: 15%;
+  font-family: Montserrat;
+  font-size: 60px;
+  color: white;
+}
+
+.box {
+  height: 300px;
+  width: 450px;
+  text-align: left;
+  position:relative;
+  background-color:#090057 ;
+  opacity:0.8;
+  margin:5% auto;
+  padding: 1% 5% 5%;
+}
+.form-heading{
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.5rem;
+  padding:0;
+}
+.input-box{
+  line-height: 2.5;
+  font-size: 1.3rem;
+}
+.details{
+  color: #fff;
+}
+.btn {
+  background: #42d934;
+  background-image: -webkit-linear-gradient(top, #42d934, #2e801a);
+  background-image: -moz-linear-gradient(top, #42d934, #2e801a);
+  background-image: -ms-linear-gradient(top, #42d934, #2e801a);
+  background-image: -o-linear-gradient(top, #42d934, #2e801a);
+  background-image: linear-gradient(to bottom, #42d934, #2e801a);
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 4%;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cfc49;
+  background-image: -webkit-linear-gradient(top, #3cfc49, #48991a);
+  background-image: -moz-linear-gradient(top, #3cfc49, #48991a);
+  background-image: -ms-linear-gradient(top, #3cfc49, #48991a);
+  background-image: -o-linear-gradient(top, #3cfc49, #48991a);
+  background-image: linear-gradient(to bottom, #3cfc49, #48991a);
+  text-decoration: none;
+}
+.content-area{
+  width: 100%;
+  position: relative;
+  top: 800px;
+  background: #ddd;
+  height: 1000px;
+}
+.content-area h2{
+  font-family: Montserrat;
+  font-size: 40px;
+  letter-spacing: 3px;
+  padding-top: 30px;
+  margin: 0;
+}
+.content-area p{
+  font-family: Montserrat;
+  font-size: 20px;
+  padding: 60px;
+}
