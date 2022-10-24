@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 1920px;
+    height: 1080px;
+}
+    
+
+body {
+    height: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
