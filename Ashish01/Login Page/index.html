@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .float{
+        margin: 10px auto;
+        border-radius: 50%;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box{
+        max-height: 600px;
+        max-width: 350px;
+        display: flex;
+        padding: 15px 20px;
+        border-radius: 10px;
+        border: 5px solid #0E1C38;
+        flex-direction: column;
+        background-color: chartreuse;
+    }
+    .input_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    input{
+        margin: 5px 0;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+    }
+    .OR{
+        text-align: center;
+        padding: 5px;
+    }
+    img{
+        max-height: 100px;
+        max-width: 100px;
+    }
+    .login{
+        transition: background-color .5s ease;
+        cursor: pointer;
+    }
+    .login:hover{
+        background-color: #0E1C38;
+        color: #ffffff;
+    }
+    @media screen and (max-width: 260px){
+        body, input{
+            font-size: x-small;
+        }
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="float">
+            <img src="pngfind.com-verified-png-5551803.png" alt="USER">
+        </div>
+        <div class="input_section">
+            <label for="username">Username</label>
+            <input type="username" id="username" name="username" placeholder="Username">
+            <p class="OR">OR<br></p>
+            <label for="email">Email Id</label>
+            <input type="email" id="email" name="email" placeholder="Your Email ID">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <input type="submit" value="Login" class="login"
+        </div>
+    </div>
+</body>
+</html>
