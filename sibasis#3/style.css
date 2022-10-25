@@ -1,0 +1,17 @@
+
+.box {
+   width:80%;
+   min-height:80vh;
+   margin:auto;
+   border:1px solid;
+   display: grid;
+   place-items: center;
+}
+.box img {
+   display: block;
+   width: 80%;
+   min-width:100px;
+   max-width: 350px; /*actual image width*/
+   height: auto; /* maintain aspect ratio*/
+   margin: auto; /*optional centering of image*/
+}
