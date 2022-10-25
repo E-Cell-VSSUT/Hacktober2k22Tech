@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center Flex Item Image</title>
+<style>
+.box {
+   width:80%;
+   min-height:80vh;
+   margin:auto;
+   border:1px solid;
+   display: flex;
+   align-items: center;
+   justify-content: center; /* not really needed with auto margin on img*/
+}
+.box img {
+   display: block;
+   width: 80%;
+   min-width:100px;
+   max-width: 350px; /*actual image width*/
+   height: auto; /* maintain aspect ratio*/
+   margin: auto; /*optional centering of image*/
+}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+   <img src="image.jpg" width="350" height="250" alt="missing image">
+</div>
+
+</body>
+</html>
