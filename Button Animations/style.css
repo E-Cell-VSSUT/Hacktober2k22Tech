@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: larger;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+i{
+    color: #031059;
+    margin: 0 5px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: all .5s ease-in;
+    transition: background-color 0.5s ease;
+}
+i:hover{
+    animation: 1.7s ease-out socie_beat infinite;
+}
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
+.fa-github:hover{
+    color: #000101;
+}
+.fa-linkedin:hover{
+    color: #0176B5;
+}
+.fa-facebook:hover{
+    color: #1877F2;
+}
+.fa-youtube:hover{
+    color: #FE0101;
+}
+@keyframes socie_beat{
+    10%{
+        border-radius: 50%;
+        background-color: #ffcbff;
+    }
+    40%{
+        border-radius: 10%;
+        background-color: #90d4ff;
+    }
+    70%{
+        border-radius: 50%;
+    }
+}
+@media screen and (max-width: 460px){
+    .container{
+        flex-direction: column;
+    }
+}
