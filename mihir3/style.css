@@ -1,0 +1,12 @@
+table{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXpGxwk8luEm1bNFYP_WTU_8LrDN_x6KM-1IxzAxaru9mS9OCXurGS0wCGubl-KjV1SOA&usqp=CAU');
+    background-size: auto;
+  image-resolution: 100%;
+  background-size: 100% 100%;
+  background-blend-mode: difference;
+}
+td{
+    color: black;
+    font-size: larger;
+    font-style: italic;
+}
