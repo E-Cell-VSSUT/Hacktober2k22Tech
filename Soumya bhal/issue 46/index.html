@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Weather Website</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+        <!-- <a class="weatherwidget-io" href="https://forecast7.com/en/21d4983d88/burla/" data-label_1="BURLA"
+            data-label_2="WEATHER" data-theme="original">BURLA WEATHER</a>
+        <script>
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+        </script>  -->
+        <!-- <nav class="disp">
+            <div class="weather-days">
+                <ul class="W-days">
+                    <li>
+                        <div class="temp">31&deg;C</div>
+                        <div class="time">13:00</div>
+                    </li >
+                    <li>
+                        <div class="temp">31&deg;C</div>
+                        <div class="time">13:00</div>
+                    </li >
+                    <li>
+                        <div class="temp">31&deg;C</div>
+                        <div class="time">13:00</div>
+                    </li >
+                    <li>
+                        <div class="temp">31&deg;C</div>
+                        <div class="time">13:00</div>
+                    </li>
+                    <li>
+                        <div class="temp">31&deg;C</div>
+                        <div class="time">13:00</div>
+                    </li>
+                    <li>
+                        <div class="temp">31&deg;C</div>
+                        <div class="time">13:00</div>
+                    </li>
+                    <li>
+                        <div class="temp">31&deg;C</div>
+                        <div class="time">13:00</div>
+                    </li>
+                    <li>
+                        <div class="temp">31&deg;C</div>
+                        <div class="time">13:00</div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav> -->
+  
+
+
+    <div class="upper-container">
+        <div class="imag"></div>
+        <input type="text" id="input-box" class="input-box" placeholder="Enter city name">
+         
+         <!-- <a class="weatherwidget-io" href="https://forecast7.com/en/21d4983d88/burla/" data-label_1="BURLA" data-label_2="WEATHER" data-theme="metallic" >BURLA WEATHER</a>
+            <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js'); 
+        </script> -->
+
+        <nav class="disp">
+            <div class="date-time">
+                <div class="date" id="date">16 August, 2022</div>
+                <div class="time1" id="time1">00:29</div>
+
+
+            </div>
+        </nav>
+       
+
+        <nav class="disp">
+            <div class="animation">
+                
+
+                <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_orqfuyox.json" background="transparent"
+                speed="1" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+
+            <!-- <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_xlky4kvh.json" background="transparent"
+                speed="1" style="width: 200px; height: 200px;" loop autoplay></lottie-player> -->
+
+
+
+            </div>
+        </nav>
+        
+        
+    </div>
+    
+        <div class="weather-body">
+            <nav class="disp">
+            <div class="city" id="city">Burla, IN</div>
+
+            <div class="weather-status">
+                <div class="temp1" id="temp1">34&deg;C</div>
+                <!-- <div class="min-max" id="min-max">32&deg;C (min) / 34&deg;C (max)</div> -->
+                <div class="weather" id="weather">Clear</div>
+                <div id="img"></div>
+            </div>
+            </nav>
+            <br><br>
+
+
+            <ul class="icon-container">
+                <nav class="disp">
+                <li class="wind-speed">
+                    <img src="windock.png">
+                    <p>19 km/h</p>
+                    <span>Wind Speed</span>
+                </li>
+                <li class="humidity">
+                    <img src="humidity.png">
+                    <p>95%</p>
+                    <span>Humidity</span>
+                </li>
+                <li class="air-pressure">
+                    <img src="barometer.png">
+                    <p>1001 mb</p>
+                    <span>Air Pressure</span>
+                </li>
+                </nav>
+            </ul>
+            <video id="vdo" autoplay muted loop plays-inline>
+                <source src="vdo.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
