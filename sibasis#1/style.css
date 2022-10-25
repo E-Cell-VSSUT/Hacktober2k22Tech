@@ -1,0 +1,823 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Allison&family=Arimo&family=Bad+Script&family=Bebas+Neue&family=Bubblegum+Sans&family=Caveat&family=Cookie&family=Dancing+Script&family=Great+Vibes&family=Josefin+Sans&family=Kdam+Thmor+Pro&family=Lobster+Two&family=Montserrat:wght@100&family=Pathway+Gothic+One&family=Racing+Sans+One&family=Style+Script&family=Teko:wght@300&family=Water+Brush&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.sections {
+    display: flex;
+    padding: 1vh;
+    justify-content: end;
+    position: relative;
+    background-color: #636e72;
+}
+
+.sections li {
+    position: relative;
+    right: 3%;
+    margin-left: 8%;
+    padding: 0.5%;
+    list-style: none;
+}
+
+.sections li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sections li a::before {
+    content: "";
+    border-top: 0.3vh solid #34e7e4;
+    border-left: 0.3vh solid #34e7e4;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.sections li a::after {
+    content: "";
+    border-right: 0.3vh solid #34e7e4;
+    border-bottom: 0.3vh solid #34e7e4;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+ul li a:hover:after,
+ul li a:hover:before {
+    width: 20%;
+    height: 20%;
+    transition: all 0.4s;
+}
+
+.navbar {
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+}
+
+#div1 {
+    position: relative;
+    margin-top: 1vh;
+    display: grid;
+    place-items: center;
+}
+
+#div2 {
+    position: relative;
+    margin-top: 1vh;
+    display: grid;
+    place-items: center;
+}
+
+#div3 {
+    position: relative;
+    margin-top: 1vh;
+    display: grid;
+    place-items: center;
+}
+
+#div4 {
+    position: relative;
+    margin-top: 1vh;
+    display: grid;
+    place-items: center;
+}
+
+.image {
+    position: relative;
+    height: 50vh;
+    width: 95vw;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
+    color: white;
+    background: url("middle.jpg");
+    background-size: 100% 100%;
+}
+
+.image h1 {
+    font-size: 6rem;
+    margin: 1vh;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1vw;
+    font-weight: bolder;
+    background-color: #fff;
+    padding: 0 4vw;
+    mix-blend-mode: screen;
+    color: black;
+}
+
+.wd {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 2rem;
+}
+
+
+
+#div2 {
+    position: relative;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    position: relative;
+    width: 95vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size: 1rem;
+    /* background-color: #34e7e4; */
+}
+
+.hobbies {
+    position: relative;
+    height: 50vh;
+    width: 95vw;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+.projects {
+    position: relative;
+    width: 95vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+.calls {
+    position: relative;
+    height: 50vh;
+    width: 95vw;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+#icon {
+    margin: 2vh;
+}
+
+.declare {
+    color: #dfe6e9;
+    margin-top: 1vh;
+    font-size: 5rem;
+    padding: 2vh;
+    font-family: 'Bubblegum Sans', cursive;
+    text-decoration: underline;
+}
+
+#career {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#career i {
+    color: #ffeaa7;
+    border-top: 2px solid cyan;
+    padding: 2vh;
+}
+
+#career h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid red;
+    color: #34e7e4;
+    /* font-family: 'Arimo', sans-serif; */
+}
+
+#career p {
+    margin: 5vh;
+    color: #fff200;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#contact {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact #mail {
+    color: orange;
+    border-top: 2px solid #fff200;
+    padding: 2vh;
+    margin: 20px;
+}
+
+#contact #facebook {
+    color: blue;
+    border-top: 2px solid #fff200;
+    padding: 2vh;
+    margin: 20px;
+}
+
+#contact #instagram {
+    color: rgb(241, 16, 166);
+    border-top: 2px solid #fff200;
+    padding: 2vh;
+    margin: 20px;
+}
+
+#contact #linkedin {
+    color: blue;
+    border-top: 2px solid #fff200;
+    padding: 2vh;
+    margin: 20px;
+}
+
+#div4 .calls #contact .social {
+    color: #fd79a8;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+}
+
+#call {
+    margin-bottom: 80px;
+}
+
+.calls {
+    padding: 20px;
+}
+
+
+/*  */
+#career {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#career i {
+    color: #ffeaa7;
+    border-top: 2px solid cyan;
+    padding: 2vh;
+}
+
+#career h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid red;
+    color: #34e7e4;
+    /* font-family: 'Arimo', sans-serif; */
+}
+
+#career p {
+    margin: 5vh;
+    color: #fff200;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#lfr {
+    justify-content: flex-start;
+    width: 35%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#lfr i {
+    color: #ffeaa7;
+    border-top: 2px solid cyan;
+    padding: 2vh;
+}
+
+#lfr h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid red;
+    color: #34e7e4;
+    /* font-family: 'Arimo', sans-serif; */
+}
+
+#lfr p {
+    margin: 5vh;
+    color: #fff200;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.busy{
+    width: 95%;
+    display: flex;
+}
+#calc {
+   justify-content: flex-end;
+    width: 35%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc i {
+    color: #ffeaa7;
+    border-top: 2px solid cyan;
+    padding: 2vh;
+}
+
+#calc h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid red;
+    color: #34e7e4;
+    /* font-family: 'Arimo', sans-serif; */
+}
+
+#calc p {
+    margin: 5vh;
+    color: #fff200;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*  */
+#f1 {
+    justify-content: flex-start;
+     width: 35%;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ #f1 i {
+     color: #ffeaa7;
+     border-top: 2px solid cyan;
+     padding: 2vh;
+ }
+ 
+ #f1 h1 {
+     font-size: 2rem;
+     border-bottom: 2px solid red;
+     color: #34e7e4;
+     /* font-family: 'Arimo', sans-serif; */
+ }
+ 
+ #f1 p {
+     margin: 5vh;
+     color: #fff200;
+     font-size: 2rem;
+     font-family: 'Josefin Sans', sans-serif;
+ }
+ /*  */
+ #f2 {
+    justify-content: flex-end;
+     width: 35%;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ #f2 i {
+     color: #ffeaa7;
+     border-top: 2px solid cyan;
+     padding: 2vh;
+ }
+ 
+ #f2 h1 {
+     font-size: 2rem;
+     border-bottom: 2px solid red;
+     color: #34e7e4;
+     /* font-family: 'Arimo', sans-serif; */
+ }
+ 
+ #f2 p {
+     margin: 5vh;
+     color: #fff200;
+     font-size: 2rem;
+     font-family: 'Josefin Sans', sans-serif;
+ }
+ /*  */
+ #f3 {
+    justify-content: flex-start;
+     width: 35%;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ #f3 i {
+     color: #ffeaa7;
+     border-top: 2px solid cyan;
+     padding: 2vh;
+ }
+ 
+ #f3 h1 {
+     font-size: 2rem;
+     border-bottom: 2px solid red;
+     color: #34e7e4;
+     /* font-family: 'Arimo', sans-serif; */
+ }
+ 
+ #f3 p {
+     margin: 5vh;
+     color: #fff200;
+     font-size: 2rem;
+     font-family: 'Josefin Sans', sans-serif;
+ }
+ /*  */
+ .content{
+    color: cyan;
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+ }
+ .content p{
+    color: cyan;
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+ }
+/* media Queries */
+@media only screen and (max-width:950px) {
+    .image {
+        position: relative;
+        height: 35vh;
+        width: 95vw;
+    }
+}
+
+@media only screen and (max-width:720px) {
+    .image {
+        position: relative;
+        height: 30vh;
+        width: 95vw;
+    }
+
+    #div4 .about #contact .social {
+        color: #fd79a8;
+        text-decoration: none;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.3rem;
+    }
+
+    #icon {
+        margin: 1.3vh;
+    }
+
+    #career i {
+        color: #ffeaa7;
+        border-top: 2px solid cyan;
+        padding: 1vh;
+    }
+
+    #career h1 {
+        font-size: 1.4rem;
+        border-bottom: 2px solid red;
+        color: #34e7e4;
+        /* font-family: 'Arimo', sans-serif; */
+    }
+
+    #career p {
+        margin: 3vh;
+        color: #fff200;
+        font-size: 1.4rem;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .declare {
+        color: #dfe6e9;
+        margin-top: 0.5vh;
+        font-size: 3rem;
+        padding: 0.8vh;
+        font-family: 'Bubblegum Sans', cursive;
+        text-decoration: underline;
+    }
+
+    .about {
+        position: relative;
+        height: 35vh;
+        width: 95vw;
+        padding: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        font-size: 1rem;
+    }
+
+    .doc1 {
+        display: flex;
+    }
+
+    .hobbies {
+        position: relative;
+        height: 35vh;
+        width: 95vw;
+        padding: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        font-size: 1rem;
+    }
+
+    .projects {
+        position: relative;
+        height: 35vh;
+        width: 95vw;
+        padding: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        font-size: 1rem;
+    }
+
+    .calls {
+        position: relative;
+        height: 25vh;
+        width: 95vw;
+        padding: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        font-size: 1rem;
+    }
+
+    #div4 .calls #contact .social {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .image {
+        position: relative;
+        height: 22vh;
+        width: 95vw;
+    }
+
+    .image h1 {
+        font-size: 4rem;
+    }
+
+    #div4 .about #contact .social {
+        color: #fd79a8;
+        text-decoration: none;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1rem;
+    }
+
+    #icon {
+        margin: 1vh;
+    }
+
+    #career i {
+        color: #ffeaa7;
+        border-top: 2px solid cyan;
+        padding: 0.7vh;
+    }
+
+    #career h1 {
+        font-size: 1.2rem;
+        border-bottom: 2px solid red;
+        color: #34e7e4;
+        /* font-family: 'Arimo', sans-serif; */
+    }
+
+    #career p {
+        margin: 2vh;
+        color: #fff200;
+        font-size: 1.2rem;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .declare {
+        color: #dfe6e9;
+        margin-top: 0.5vh;
+        font-size: 4rem;
+        padding: 0.8vh;
+        font-family: 'Bubblegum Sans', cursive;
+        text-decoration: underline;
+    }
+
+    .about {
+        position: relative;
+        height: 80vh;
+        flex-direction: column;
+        width: 95vw;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .hobbies {
+        position: relative;
+        height: 35vh;
+        width: 95vw;
+        padding: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        font-size: 1rem;
+    }
+
+    .projects {
+        position: relative;
+        height: 35vh;
+        width: 95vw;
+        padding: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        font-size: 1rem;
+    }
+
+    .calls {
+        position: relative;
+        height: 25vh;
+        width: 95vw;
+        padding: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        font-size: 1rem;
+    }
+
+    #div4 .calls #contact .social {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:392px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .image {
+        position: relative;
+        height: 22vh;
+        width: 95vw;
+    }
+
+    .image h1 {
+        font-size: 4rem;
+    }
+
+    #div4 .about #contact .social {
+        color: #fd79a8;
+        text-decoration: none;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1rem;
+    }
+
+    #icon {
+        margin: 1vh;
+    }
+
+    #career i {
+        color: #ffeaa7;
+        border-top: 2px solid cyan;
+        padding: 0.7vh;
+    }
+
+    #career h1 {
+        font-size: 1.2rem;
+        border-bottom: 2px solid red;
+        color: #34e7e4;
+        /* font-family: 'Arimo', sans-serif; */
+    }
+
+    #career p {
+        margin: 2vh;
+        color: #fff200;
+        font-size: 1.2rem;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .declare {
+        color: #dfe6e9;
+        margin-top: 0.5vh;
+        font-size: 3.5rem;
+        padding: 0.8vh;
+        font-family: 'Bubblegum Sans', cursive;
+        text-decoration: underline;
+    }
+
+    .about {
+        position: relative;
+        height: 80vh;
+        flex-direction: column;
+        width: 95vw;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .hobbies {
+        position: relative;
+        height: 50vh;
+        flex-direction: column;
+        width: 95vw;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .projects {
+        position: relative;
+        height: 50vh;
+        flex-direction: column;
+        width: 95vw;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .calls {
+        position: relative;
+        height: 40vh;
+        flex-direction: column;
+        width: 95vw;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    #div4 .calls #contact .social {
+        font-size: 1rem;
+    }
+
+    .sections li a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+        font-weight: bold;
+        padding: 4px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .sections li a::before {
+        content: "";
+        border-top: 0.15vh solid #34e7e4;
+        border-left: 0.15vh solid #34e7e4;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+
+    .sections li a::after {
+        content: "";
+        border-right: 0.15vh solid #34e7e4;
+        border-bottom: 0.15vh solid #34e7e4;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+    }
+}
