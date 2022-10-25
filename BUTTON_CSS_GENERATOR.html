@@ -1,0 +1,56 @@
+<!-- //Add the following code to the <head> section of your HTML document: -->
+
+    <link rel="stylesheet" type="text/css" href="button_css_generator.css">
+    
+    
+<!-- //Add the following code to the <body> section of your HTML document: -->
+
+
+
+<div id="button_css_generator">
+    <h2>Button CSS Generator</h2>
+    <p>Enter the CSS properties for your button in the form below and click the "Generate CSS" button. The generated CSS
+        will be displayed in the "Output" area. You can then copy and paste this CSS to your own stylesheet.</p>
+    <form>
+        <div> <label for="button_text">Button Text:</label> <input type="text" id="button_text"> </div>
+        <div> <label for="button_width">Button Width:</label> <input type="text" id="button_width"> </div>
+        <div> <label for="button_height">Button Height:</label> <input type="text" id="button_height"> </div>
+        <div> <label for="button_background_color">Button Background Color:</label> <input type="text"
+                id="button_background_color"> </div>
+        <div> <label for="button_border_color">Button Border Color:</label> <input type="text" id="button_border_color">
+        </div>
+        <div> <label for="button_border_width">Button Border Width:</label> <input type="text" id="button_border_width">
+        </div>
+        <div> <label for="button_border_radius">Button Border Radius:</label> <input type="text"
+                id="button_border_radius"> </div>
+        <div> <label for="button_font_family">Button Font Family:</label> <input type="text" id="button_font_family">
+        </div>
+        <div> <label for="button_font_size">Button Font Size:</label> <input type="text" id="button_font_size"> </div>
+        <div> <label for="button_font_weight">Button Font Weight:</label> <input type="text" id="button_font_weight">
+        </div>
+        <div> <label for="button_text_color">Button Text Color:</label> <input type="text" id="button_text_color">
+        </div>
+        <div> <label for="button_text_shadow">Button Text Shadow:</label> <input type="text" id="button_text_shadow">
+        </div>
+        <div> <label for="button_text_transform">Button Text Transform:</label> <input type="text"
+                id="button_text_transform"> </div>
+        <div> <label for="button_letter_spacing">Button Letter Spacing:</label> <input type="text"
+                id="button_letter_spacing"> </div>
+        <div> <label for="button_align">Button Align:</label> <select id="button_align">
+                <option value="left">Left</option>
+                <option value="center">Center</option>
+                <option value="right">Right</option>
+            </select> </div>
+        <div> <label for="button_vertical_align">Button Vertical Align:</label> <select id="button_vertical_align">
+                <option value="top">Top</option>
+                <option value="middle">Middle</option>
+                <option value="bottom">Bottom</option>
+            </select> </div>
+        <div> <label for="button_padding">Button Padding:</label> <input type="text" id="button_padding"> </div>
+        <div> <label for="button_margin">Button Margin:</label> <input type="text" id="button_margin"> </div>
+        <div> <input type="button" value="Generate CSS" onclick="generate_css()"> </div>
+    </form>
+    <div id="output">
+        <!-- CSS will be output here -->
+    </div>
+</div>
