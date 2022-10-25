@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    background: linear-gradient(25deg, #ffffff, #56A3D66a);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 75px;
+    padding: 5px 20px;
+}
+header i{
+    font-size: 25px;
+    color: #E3520F;
+}
+header img{
+    max-height: 50px;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    height: 87.5vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(wave-41459.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 280px;
+    width: 250px;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 0px 15px;
+    background: #0d56b660;
+    margin-bottom: 100px;
+    z-index: 2;
+}
+.circle{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    margin: 10px auto;
+    position: a;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.contact .col img{
+    max-height: 135px;
+}
+.contact a{
+    color: #003759;
+}
+footer{
+    text-align: center;
+    background-color: #003759;
+    color: #ffffff;
+    padding: 15px 0;
+}
+footer a{
+    color: #ffffff;
+    margin-bottom: 0;
+}
+@media screen and (max-width: 600px){
+    .col{
+        height: 195px;
+        width: 160px;
+        font-size: smaller;
+    }
+    .circle{
+        height: 75px;
+        width: 75px;
+    }
+    .contact .col img{
+        max-height: 50px;
+    }
+    footer{
+        font-size: smaller;
+    }
+}
+@media screen and (max-width: 340px){
+    .contact{
+        flex-direction: column;
+    }
+    .col{
+        margin-bottom: 20px;
+    }
+}
