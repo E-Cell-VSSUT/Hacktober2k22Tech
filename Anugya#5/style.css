@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+   display: grid;
+   place-items: center;
+   height:100vh;
+}
+img{
+    width:350px;
+    height:230px;
+}
