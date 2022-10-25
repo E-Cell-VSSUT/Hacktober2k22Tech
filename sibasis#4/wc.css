@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Arimo&family=Bebas+Neue&family=Caveat&family=Cookie&family=Dancing+Script&family=Josefin+Sans&family=Kdam+Thmor+Pro&family=Lobster+Two&family=Pathway+Gothic+One&family=Racing+Sans+One&family=Style+Script&family=Teko:wght@300&family=Water+Brush&display=swap');html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: opx;
+}
+
+body {
+    background-color: #5f27cd;
+}
+.interface{
+    display: grid;
+    height: 10vh;
+    grid-template-columns: 3fr 1fr 1fr;
+ transform: translate(10vw,5vh);
+ font-size: 8rem;
+ color:#ff9ff3;
+ text-shadow: 2px 2px 4px black;
+ font-family: 'Allison', cursive;
+}
+#text{
+    height: 60%;
+    width: 25%;
+}
+#submit{
+    height: 60%;
+    width: 100%;
+    background-color: #1dd1a1;
+}
+
+.result {
+    top: 20vh;
+    width: 60vw;
+    height: 50vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    position: relative;
+    transform: translate(20vw, 10vh);
+    align-content: center;
+    font-size: 6rem;
+    color: #ff6b6b;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.degree {
+    font-size: 5rem;
+    color: #48dbfb;
+    text-shadow: 2px 2px 4px black;
+}
+
+.status {
+    font-size: 5rem;
+    color: #48dbfb;
+}
+
+.speed {
+    font-size: 5rem;
+    color: #48dbfb;
+}
+
+.humidity {
+    font-size: 5rem;
+    color: #48dbfb;
+}
+@media only screen and (max-width:1020px)
+{
+    .interface{
+        display: grid;
+        height: 7vh;
+        grid-template-columns: 3fr 1fr 1fr;
+     transform: translate(10vw,5vh);
+     font-size: 6rem;
+     color:#ff9ff3;
+     text-shadow: 2px 2px 4px black;
+     font-family: 'Allison', cursive;
+    }
+    .result {
+        top: 20vh;
+        width: 60vw;
+        height: 40vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        position: relative;
+        transform: translate(20vw, 10vh);
+        align-content: center;
+        font-size: 4rem;
+        color: #ff6b6b;
+        text-shadow: 2px 2px 4px black;
+        font-family: 'Pathway Gothic One', sans-serif;
+    }
+}
+
+
+@media only screen and (max-width:780px)
+{
+    .interface{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        row-gap: 2vw;
+     transform: translate(10vw,0vh);
+     font-size: 6rem;
+     color:#ff9ff3;
+     text-shadow: 2px 2px 4px black;
+     font-family: 'Allison', cursive;
+    }
+    .result {
+        top: 10vh;
+        width: 70vw;
+        height: 40vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        position: relative;
+        transform: translate(18vw, 15vh);
+        align-content: center;
+        font-size: 3rem;
+        color: #ff6b6b;
+        text-shadow: 1.5px 1.5px 3px black;
+        font-family: 'Pathway Gothic One', sans-serif;
+    }
+    #text{
+        height: 30%;
+        width: 50%;
+    }
+    #submit{
+        height: 60%;
+        width: 60%;
+        background-color: #1dd1a1;
+    }
+    
+.degree {
+    font-size: 3rem;
+    color: #48dbfb;
+    text-shadow: 2px 2px 4px black;
+}
+
+.status {
+    font-size: 3rem;
+    color: #48dbfb;
+}
+
+.speed {
+    font-size: 3rem;
+    color: #48dbfb;
+}
+
+.humidity {
+    font-size: 3rem;
+    color: #48dbfb;
+}
+}
+
+@media only screen and (max-width:450px)
+{
+    .interface{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        row-gap: 2vw;
+     transform: translate(10vw,0vh);
+     font-size: 5rem;
+     color:#ff9ff3;
+     text-shadow: 2px 2px 4px black;
+     font-family: 'Allison', cursive;
+    }
+    .result {
+        top: 10vh;
+        width: 70vw;
+        height: 40vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        position: relative;
+        transform: translate(18vw, 15vh);
+        align-content: center;
+        font-size: 3rem;
+        color: #ff6b6b;
+        text-shadow: 1.5px 1.5px 3px black;
+        font-family: 'Pathway Gothic One', sans-serif;
+    }
+    #text{
+        height: 30%;
+        width: 50%;
+    }
+    #submit{
+        height: 60%;
+        width: 60%;
+        background-color: #1dd1a1;
+    }
+    
+.degree {
+    font-size: 3rem;
+    color: #48dbfb;
+    text-shadow: 2px 2px 4px black;
+}
+
+.status {
+    font-size: 3rem;
+    color: #48dbfb;
+}
+
+.speed {
+    font-size: 3rem;
+    color: #48dbfb;
+}
+
+.humidity {
+    font-size: 3rem;
+    color: #48dbfb;
+}
+}
+@media only screen and (max-width:350px)
+{
+    .interface{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin: 0px;
+        transform: translate(10vw,0vh);
+        font-size: 8rem;
+     color:#ff9ff3;
+     text-shadow: 2px 2px 4px black;
+     font-family: 'Allison', cursive;
+    }
+    .result {
+        top: 10vh;
+        width: 70vw;
+        height: 30vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        position: relative;
+        transform: translate(18vw, 40vh);
+        align-content: center;
+        font-size: 3rem;
+        color: #ff6b6b;
+        text-shadow: 1.5px 1.5px 3px black;
+        font-family: 'Pathway Gothic One', sans-serif;
+    }
+    #text{
+        height: 10%;
+        width: 50%;
+    }
+    #submit{
+        height: 30%;
+        width: 60%;
+        background-color: #1dd1a1;
+    }
+    
+.degree {
+    font-size: 2rem;
+    color: #48dbfb;
+    text-shadow: 2px 2px 4px black;
+}
+
+.status {
+    font-size: 2rem;
+    color: #48dbfb;
+}
+
+.speed {
+    font-size: 2rem;
+    color: #48dbfb;
+}
+
+.humidity {
+    font-size: 2rem;
+    color: #48dbfb;
+}
+}
