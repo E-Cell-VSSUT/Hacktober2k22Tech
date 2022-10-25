@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.disp{
+    display: none;
+}
+
+body {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+}
+
+.upper-container{
+    /* background-image: url(yellow.jfif); */
+    background: rgba(255,255,255,0.5);
+    /* scale:2; */
+    width: 100%;
+    height: 40%;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.input-box{
+    position: absolute;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,0.6);
+    text-align: center;
+    font-size: 1.2rem;
+    width: 30%;
+    border-radius: 15px 15px 15px 15px;
+    padding: 15px;
+    top: 30px;
+    left: 35%;
+    transition: .4s;
+    /* align : center; */
+}
+.input-box:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+}
+.upper-container .date-time{
+    position: absolute;
+    color: white;
+    bottom: 40px;
+    right : 50px;
+    font-size: 20px;
+    font-weight: bold ;  
+}
+.weather-body{
+    text-align: center;
+    /* background-color: rgb(0, 187, 255); */
+    height: 500px;
+}
+.city{
+    padding: 15px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 0 0 8px rgb(0, 183, 255) , 0 0 10px rgb(255, 242, 97);
+}
+.temp1{
+    font-size: 65px;
+    color: white;
+    padding: 10px;
+    font-weight: bold ;
+    text-shadow: 0 0 8px rgb(0, 183, 255);
+}
+
+.weather{
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 0 8px rgb(58, 3, 255) , 0 0 10px rgb(255, 242, 97);
+}
+
+ul .icon-container{
+    white-space: nowrap;
+    max-width: 100%;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 30px;
+}
+li{
+    display: inline-block;
+    font-size: 18px;
+    width: 25%;
+    font-weight: 550;
+}
+li img{
+    max-width: 20%;
+}
+li p{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    /* background: rgba(255,255,255,0.5); */
+}
+li span{
+    font-size: 20px;
+    color: white;
+}
+.weather-days{
+    background: rgba(0, 187, 255,0.5); 
+}
+.W-days{
+    display: absolute ;
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.W-days li {
+    display: inline-block;
+    width: 12.5%;
+    font-size: 18px;
+    padding: 0px 5px;
+    background: rgba(0, 187, 255);
+    border-radius: 15px;
+    text-align: center;
+}
+.W-days li .temp{
+    font-size: 40px;
+    padding: 10px;
+}
+.W-days li .time{
+    font-size: 20px;
+}
+
+.animation{
+    position: absolute;
+    top: 40px;
+
+    left: 50px;
+    width: 50px;
+    
+}
+#vdo{
+    position: absolute; 
+    right: 0;
+    top: 0;
+    z-index: -1;
+   
+}
+ @media(min-aspect-ratio : 16/9){
+    #vdo{
+        width: 100%;
+        height: auto;
+    }
+ }
+ @media(max-aspect-ratio : 16/9){
+    #vdo{
+        width: auto;
+        height: 100%;
+    }
+ }
+
+#grad {
+    background-image: linear-gradient(rgb(80, 75, 75), rgb(232, 232, 218));
+  }
+ 
+@media screen and (max-width: 1290px) {
+    body{
+        text-align: centre;
+    }
+    .upper-container{
+        height: 40%;
+    }
+    .input-box{
+         width: 30%;
+         margin-top: 0px;
+    }
+    .upper-container .date-time{
+
+          font-size: 22px;
+          bottom: 18px;
+          right: 30px;
+
+    }
+    .animation{
+       right: 1000px;
+       width: 200px;
+       align-items: center;
+    }
+    .weather-body{
+          text-align: center;
+          height: 500px;
+          
+    }
+    .city{
+          font-size: 35px;
+          padding: 10px;
+    }
+    .temp{
+          font-size: 40px;
+          padding: 10px;
+    }
+    .weather{
+          font-size: 30px;
+    }
+    ul{
+          max-width: 100%;
+
+    }
+    li{
+        margin-right: 20px;
+
+    }
+    li img{
+        max-width: 40%;
+    }
+    li span{
+         font-size: 20px;
+         text-align: center;
+    }
+    li p{
+         font-size: 25px;
+         text-align: center;
+    }
+    /*.weather-days{
+        max-width: 80%;
+    }
+    .W-days{
+           max-width:20%;
+           right: 300px;
+           align-items: center;
+           padding-left: 0px;
+    }
+    .W-days li{
+          width: 90%;
+          right: 100px;
+          margin: 0px;
+          
+    }
+    .W-days li .time{
+         font-size: 20px;
+    }
+    .W-days li .temp{
+        font-size: 25px;
+    }*/
+    #vdo{
+        height: 900px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    body{
+        text-align: centre;
+    }
+    .upper-container{
+        height: 40%;
+    }
+    .input-box{
+         width: 30%;
+         margin-top: 0px;
+    }
+    .upper-container .date-time{
+
+          font-size: 22px;
+          bottom: 18px;
+          right: 23px;
+
+    }
+    .animation{
+       right: 425px;
+       
+    }
+    .weather-body{
+          text-align: center;
+          height: 500px;
+          
+    }
+    .city{
+          font-size: 30px;
+    }
+    .temp{
+          font-size: 40px;
+    }
+    .weather{
+          font-size: 30px;
+    }
+    ul{
+          max-width: 100%;
+
+    }
+    li{
+        margin-right: 20px;
+
+    }
+    li img{
+        max-width: 35%;
+    }
+    li span{
+         font-size: 20px;
+         text-align: center;
+    }
+    li p{
+         font-size: 25px;
+         text-align: center;
+    }
+    .W-days{
+           max-width:30%;
+    }
+    .W-days li{
+          width: 40%;
+    }
+    .W-days li p{
+         font-size: 18px;
+         text-align: center;
+    }
+    .W-days li .min-max{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        text-align: centre;
+    }
+    .upper-container{
+        height: 30%;
+    }
+    .input-box{
+         width: 25%;
+         margin-top: 0px;
+
+    }
+    .upper-container .date-time{
+
+          font-size: 1em;
+          bottom: 15px;
+          right: 20px;
+
+    }
+    .animation{
+      right: 300px;
+      width: 120px;
+      top: 70px;
+    }
+    .weather-body{
+          text-align: center;
+          height: 500px;
+          
+    }
+    .city{
+          font-size: 27px;
+    }
+    .temp{
+          font-size: 35px;
+    }
+    .weather{
+          font-size: 27px;
+    }
+    ul{
+          max-width: 100%;
+
+    }
+    li{
+        margin-right: 20px;
+
+    }
+    li img{
+        max-width: 35%;
+    }
+    li span{
+         font-size: 15px;
+         text-align: center;
+    }
+    li p{
+         font-size: 20px;
+         text-align: center;
+    }
+    .W-days{
+           max-width:40%;
+    }
+    .W-days li{
+          width: 50%;
+    }
+    .W-days li p{
+         font-size: 10px;
+    }
+    .W-days li .min-max{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        text-align: centre;
+    }
+    .upper-container{
+        height: 30%;
+    }
+    .input-box{
+        font-size: 0.75em;
+         width: 80%;
+        left: 10%;
+         margin-top: 0px;
+    }
+    .upper-container .date-time{
+
+          font-size: 0.7em;
+          bottom: 10px;
+          right: 15px;
+
+    }
+    .animation{
+       width: 2px;
+       left: 20px;
+       top: 60px;
+    }
+    .weather-body{
+          text-align: center;
+          height: 500px;
+          
+    }
+    .city{
+          font-size: 26px;
+    }
+    .temp{
+          font-size: 30px;
+    }
+    .weather{
+          font-size: 20px;
+    }
+    ul{
+          max-width: 100%;
+
+    }
+    li{
+        margin-right: 20px;
+
+    }
+    li img{
+        max-width: 50%;
+    }
+    li span{
+         font-size: 12px;
+         text-align: center;
+    }
+    li p{
+         font-size: 20px;
+         text-align: center;
+    }
+    .W-days{
+           max-width:40%;
+    }
+    .W-days li{
+          width: 50%;
+    }
+    .W-days li p{
+         font-size: 10px;
+    }
+    .W-days li .min-max{
+        font-size: 10px;
+    }
+}
+
