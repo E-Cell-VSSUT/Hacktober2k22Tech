@@ -1,0 +1,54 @@
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#f9fbfc;  
+    font-family: 'Arial';  
+}  
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #aca6a6;  
+        
+          
+}  
+h2{  
+    text-align: center;  
+    color: #333738;  
+    padding: 20px;  
+}  
+label{  
+    color: #020106;  
+    font-size: 17px;  
+}  
+#Email{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    padding-left: 7px;
+    border-radius: 24px;  
+    color: rgb(53, 33, 33);  
+  
+  
+}  
+a{  
+    float: right;  
+    background-color: grey;  
+} 
+
