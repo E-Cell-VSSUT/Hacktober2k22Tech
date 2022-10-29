@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-image: linear-gradient(rgba(73, 71, 65, 0.7),
+    rgba(69, 12, 122, 0.914)),url(https://unsplash.com/photos/gOdavfpH-3s);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+    
+  }
+  div.main{
+    width: 400px;
+    margin: 100px auto 0px auto;
+    padding-bottom: 10%;
+    
+  }
+  h2{
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+    }
+    div.register{
+        viewport-fit: ;
+        background-color: rgba(183, 175, 175, 0.7);
+        width: 100%;
+        font-size: 18px;
+        border-radius: 10px;
+        border: 1px solid rgba(98, 95, 95, 0.3);
+        box-shadow: 2px 2px 15px rgba(243, 8, 8, 0.982);
+        color: rgb(135, 177, 28)255, 255, 255);
+    }
+    form#register{
+        margin: 40px;
+    }
+    label{
+        font-family: sans-serif;
+        font-size: 18px;
+        font-style: italic ;
+    }
+    input#name{
+        width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        outline: 0;
+        padding: 7px;
+        background-color: #fff;
+        box-shadow: insert 1px 1px 5px rgba( 0,0,0,0.3);
+    }
+    input#submit{
+        width: 100px;
+        padding: 7px;
+        font-size: 16px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba(23, 87, 216, 0.629);
+        color: rgb(237, 230, 231);
+        cursor: pointer;
+        border: 1px solid  rgba(255, 255, 255, 0.64) ;
+        box-shadow: insert 1px 1px 5px rgba(19, 45, 176, 0.803); 
+        margin-bottom: 20px;
+        margin-left: 7rem;
+    }
+    label,span,h2{
+        text-shadow: 1px 1px 5px rgba( 0,0,0,0.3);
+    }
