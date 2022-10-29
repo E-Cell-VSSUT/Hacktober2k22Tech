@@ -1,0 +1,23 @@
+.container{
+    padding: 15px;
+    background-color: #f7b42c;
+    background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    margin-left: 400px 20px;
+    border-radius: 7px;
+}
+.input{
+    border: none;
+    border-radius: 3px;
+    height: 23px;
+}
+.btn{
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 7px;
+}
