@@ -1,0 +1,47 @@
+*
+{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color: #e7fae7;
+}
+.contactb
+{
+    width:500px;
+    background-color: rgb(95, 104, 207);
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+form
+{   
+    margin: 35px;
+}
+.input-field
+{
+    width:400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+.textarea-field
+{
+    height: 150px;
+    padding-top:10px ;
+}
+.sendb{
+    border-radius: 24px;
+    color: white;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #2c0ca0;
+    font-size: 12px;
+    cursor: pointer;
+}
