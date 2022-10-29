@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1
+        {
+            text-align: center;
+            color:rgb(70, 61, 241);
+            
+        }
+        .btn{
+            border-radius: 20px;
+            color:rgb(70, 61, 241);
+            margin:2px 10px;
+            padding:12px;
+        }
+        .submit{
+            text-align: center;
+        }
+        .btn:hover
+        {
+            background-color: black;
+        }
+        #contact {
+            position: relative;
+        }
+
+        #contact::before {
+            content: "";
+            background: url('contact.jpg')no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            border-radius: 9px;
+            padding: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box label {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="contact">
+        <h1 class="h-primary centre">Contact us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="email" id="name" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone Number:</label>
+                    <input type="number" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="submit">
+            <button class="btn">
+                Submit
+            </button>
+        </div>
+    </section>
+</body>
+
+</html>
