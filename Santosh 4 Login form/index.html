@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" class="css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <section class="header">
+    <div class="wrapper">
+    <div class="inner">
+      <form>
+        <h3>LOGIN</h3>
+        <p>Please fill the following information</p>
+
+        <div class="form-wrapper">
+          <input  placeholder="User ID" class="form-control">
+        </div>
+
+        <div class="form-wrapper">
+            <input type="password" placeholder="Password" class="form-control">
+          </div>
+
+        <button>Sign In</button>
+
+      </form>
+    </div>
+  </div>
+  </section>
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right="0";
+    }
+    function hideMenu(){
+      navLinks.style.right="-170px";
+    }
+  </script>
+</body>
+</html>
