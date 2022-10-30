@@ -1,0 +1,32 @@
+*{
+    margin: 5%;
+    padding: 0;
+}
+h1,h3{
+    text-align: center;
+}
+flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    min-height:80vh;
+    margin:auto;
+    border:1px solid;
+ }
+ div.register{
+    viewport-fit:;
+    background-color: rgba(183, 175, 175, 0.7);
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(98, 95, 95, 0.3);
+    box-shadow: 2px 2px 15px rgba(243, 8, 8, 0.982);
+    color: rgb(135, 177, 28)255, 255, 255;
+}
+ .flexbox img {
+    display: block;
+    width: 50%;
+    height: auto; 
+    margin: auto; 
+ }
