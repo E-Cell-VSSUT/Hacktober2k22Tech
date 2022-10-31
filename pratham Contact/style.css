@@ -1,0 +1,46 @@
+body{
+    background-color: rgba(16, 208, 222, 0.9);
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.center{
+    text-align:center;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*z-index: -1;
+    opacity: 0.8;*/
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 50%;
+}
+#contact-box label{
+    font-size: 1.1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer{
+    background-color: rgb(232, 152, 31);
+    color: rgb(14, 13, 14);
+}
