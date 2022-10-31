@@ -1,0 +1,29 @@
+.navbar {
+    width: 100%;
+    background-color: rgb(17, 187, 230);
+    overflow: auto;
+  }
+  
+  .navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    font-style: oblique;
+  } 
+  
+  .navbar a:hover {
+    background-color: rgb(38, 221, 38);
+  }
+  
+  .imp {
+    background-color: rgb(17, 187, 230);
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
