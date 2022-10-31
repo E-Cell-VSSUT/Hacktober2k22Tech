@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Contact Us</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #000000;
+    overflow-x: hidden;
+}
+#contact_us{
+    background: rgb(98, 237, 255);
+    margin-top: 70vh;
+    width: 100vw;
+    max-height: 300px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col{
+    display: flex;
+    margin: 5vh 0;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+h3{
+    padding-bottom: 5px;
+}
+p{
+    padding-top: 5px;
+}
+.col:nth-child(3) .block{
+    margin-top: 10px;
+}
+.fa{
+    margin-top: 5vh;
+}
+a{
+    text-decoration: none;
+    padding: 8px 10px;
+    color: #0c0000;
+    border-radius: 40%;
+    transition: all .3s ease;
+}
+a:hover{
+    text-decoration: underline;
+    color: brown;
+}
+.line{
+    height: 3px;
+    width: 15vh;
+    background-color: #af0230;
+    margin: 15px 0 5px 0;
+}
+@media all and (max-width: 500px){
+    body{
+        font-size: small;
+    }
+    #contact_us{
+        max-height: 100vh;
+    }
+}
+@media all and (max-width: 350px){
+    #contact_us{
+        max-height: 100vh;
+    }
+    .row{
+        flex-direction: column;
+        margin-left: 20vw;
+    }
+    .sub_cover{
+        flex-direction: column;
+    }
+    .col{
+        margin-top: 5vh;
+        margin-bottom: 0;
+    }
+    .col:nth-child(3){
+        margin-bottom: 5vh;
+    }
+}
+</style>
+<body>
+    <section id="contact_us">
+        <hr>
+        <div class="row">
+            <div class="col">
+                <h3>Some Important Links</h3>
+                <span class="line"></span>
+                <a href="#"><p>AMFI</p></a>
+                <a href="#"><p>SEBI</p></a>
+                <a href="#"><p>IEPF</p></a>
+                <a href="#"><p>RBI</p></a>
+            </div>
+            <div class="col">
+                <h3>Our Blogs</h3>
+                <span class="line"></span>
+                <a href="#"><p>CRASH: A threat to future</p></a>
+                <a href="#"><p>Submerged: The dark side of Crypto</p></a>
+                <a href="#"><p>Intelligence vs Efficiency</p></a>
+                <a href="#"><p>Funds Explained</p></a>
+            </div>
+            <div class="col">
+                <h3>Connect</h3>
+                <span class="line"></span>
+                <div class="block">
+                    <p>emailid@organization.ac.in</p>
+                    <p>Mob.: +91 99999 99999</p>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
