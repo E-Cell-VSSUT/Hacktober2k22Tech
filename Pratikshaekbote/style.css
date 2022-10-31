@@ -1,0 +1,775 @@
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.589);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.637);
+}
+
+html,
+body,
+#app,
+#principal {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+#app {
+  min-width: 767px;
+  overflow-x: auto;
+}
+
+#principal {
+  background-color: #780410;
+  transition: background-color 1s ease;
+  color: #fff;
+}
+
+#principal #latNav {
+  max-width: 246px;
+  background-color: #0a0a0a;
+}
+
+#principal #latNav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#principal #latNav .nav .nav-item .nav-link {
+  color: #fff;
+  fill: #fff;
+  font-size: 0.9em;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+#principal #latNav .nav .nav-item .nav-link svg {
+  margin-right: 13px;
+}
+
+#principal #latNav .nav .nav-item .nav-link.ativo,
+#principal #latNav .nav .nav-item .nav-link:hover {
+  opacity: 1;
+}
+
+#principal #latNav #underList button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  display: flex;
+  color: #fff;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  padding: 8px 24px;
+  width: 100%;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+#principal #latNav #underList button .plus_bttn,
+#principal #latNav #underList button .heart_bttn {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#principal #latNav #underList button .plus_bttn {
+  background-color: #fff;
+}
+
+#principal #latNav #underList button .heart_bttn {
+  background: linear-gradient(125deg, #773de3 41%, #cffff1 100%);
+  fill: #fff;
+}
+
+#principal #latNav #underList button:hover {
+  opacity: 1;
+}
+
+#principal #latNav #playlistSidebar {
+  width: 100%;
+  overflow-y: auto;
+  box-shadow: inset 0 30px 15px rgba(10, 10, 10, 0.2);
+}
+
+#principal #latNav #playlistSidebar li {
+  width: 100%;
+  list-style-type: none;
+}
+
+#principal #latNav #playlistSidebar li a {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+#principal #latNav #installApp {
+  fill: #fff;
+  font-size: 0.9em;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+#principal #latNav #installApp svg {
+  margin-right: 15px;
+}
+
+#principal #latNav #installApp:hover {
+  opacity: 1;
+}
+
+#principal #feed {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    #121212 50%,
+    #121212 100%
+  );
+  overflow-y: auto;
+}
+
+#principal #feed #topNav {
+  transition: background-color .3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+
+
+#principal #feed #topNav #arrowMenu button {
+  border: none;
+  margin: 5px;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: rgba(146, 144, 144, 0.671);
+  fill: #fff;
+  opacity: 0.5;
+}
+
+#principal #feed #topNav #btnTopNav button#upgrade {
+  background-color: rgba(10, 10, 10, 0.1);
+  color: #fff;
+  padding: 2px 10px;
+  margin: 1px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+#principal #feed #topNav #btnTopNav button#upgrade:hover {
+  background-color: #0a0a0a;
+  padding: 2px 11px;
+}
+
+#principal #feed #topNav #btnTopNav #user_bttn button {
+  background-color: rgba(99, 99, 99, 0.594);
+  border: none;
+  border-radius: 50px;
+  padding: 3px;
+  padding-right: 10px;
+}
+
+#principal #feed #topNav #btnTopNav #user_bttn button .imgUsuario {
+  border-radius: 14px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+
+#principal #feed #topNav #btnTopNav #user_bttn button:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+#principal #feed #main {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    #121212 50%,
+    #121212 100%
+  );
+}
+
+#principal #feed #main #feedHeader {
+  max-width: 1920px;
+}
+
+#principal #feed #main #feedHeader #playlistsRecentes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+#principal #feed #main #feedHeader #playlistsRecentes li {
+  list-style-type: none;
+  width: 32%;
+  border-radius: 5px;
+  margin: 7px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+#principal #feed #main #feedHeader #playlistsRecentes li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#principal #feed #main #feedHeader #playlistsRecentes li:hover button.btn {
+  opacity: 1;
+  cursor: default;
+}
+
+#principal #feed #main #feedHeader #playlistsRecentes li img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px 0 0 5px;
+}
+
+#principal #feed #main #feedHeader #playlistsRecentes li button.btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #1ed760;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.9);
+  transition: all ease-in-out 0.2s;
+}
+
+#principal #feed #main #feedHeader #playlistsRecentes li button.btn:hover {
+  padding: 1px;
+  border: 0;
+  transform: scale(1.05);
+}
+
+#botomIcon {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1186px) {
+  #principal #feed #main #feedHeader #playlistsRecentes li {
+    width: 49%;
+  }
+
+  #principal #feed #main #feedHeader #playlistsRecentes li img {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+#principal #feed #main .feedPlaylist {
+  max-width: 1920px;
+}
+
+#principal #feed #main .feedPlaylist h4 {
+  display: inline;
+}
+#principal #feed #main .feedPlaylist h4 > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#principal #feed #main .feedPlaylist h4 > a:hover {
+  text-decoration: underline;
+}
+#principal #feed #main .feedPlaylist .see-all {
+  text-decoration: none;
+  color: #b3b3b3;
+  float: right;
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+#principal #feed #main .feedPlaylist .see-all:hover {
+  text-decoration: underline;
+}
+
+#principal #feed #main .feedPlaylist .playlists {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+  overflow-y: hidden;
+  height: 380px;
+}
+
+#principal #feed #main .feedPlaylist .playlists li {
+  width: 15%;
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px 15px 0 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+#principal #feed #main .feedPlaylist .playlists li img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 17px;
+}
+
+#principal #feed #main .feedPlaylist .playlists li span {
+  font-weight: 700;
+}
+
+#principal #feed #main .feedPlaylist .playlists li p {
+  font-size: 0.9em;
+  line-height: 15px;
+  opacity: 0.8;
+}
+
+#principal #feed #main .feedPlaylist .playlists li button.btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #1ed760;
+  transition: all 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  right: 8px;
+  bottom: 80px;
+  cursor: default;
+  transition: all ease-in-out 0.2s;
+  box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.9);
+}
+
+#principal #feed #main .feedPlaylist .playlists li button.btn:hover {
+  padding: 1px;
+  border: 0;
+  transform: scale(1.05);
+}
+
+#principal #feed #main .feedPlaylist .playlists li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#principal #feed #main .feedPlaylist .playlists li:hover button.btn {
+  bottom: 95px;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 2130px) {
+  #principal #feed #main .feedPlaylist .playlists {
+    height: 360px;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  #principal #feed #main .feedPlaylist .playlists {
+    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 1730px) {
+  #principal #feed #main .feedPlaylist .playlists {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1512px) {
+  #principal #feed #main .feedPlaylist .playlists {
+    height: 295px;
+  }
+
+  #principal #feed #main .feedPlaylist .playlists li {
+    width: 18%;
+  }
+}
+
+@media only screen and (max-width: 1324px) {
+  #principal #feed #main .feedPlaylist .playlists {
+    height: 310px;
+  }
+
+  #principal #feed #main .feedPlaylist .playlists li {
+    width: 23%;
+  }
+}
+
+@media only screen and (max-width: 996px) {
+  #principal #feed #main .feedPlaylist .playlists {
+    height: 295px;
+  }
+
+  #principal #feed #main .feedPlaylist .playlists li {
+    width: 32%;
+  }
+}
+
+@media only screen and (max-width: 796px) {
+  #principal #feed #main .feedPlaylist .playlists {
+    height: 310px;
+  }
+
+  #principal #feed #main .feedPlaylist .playlists li {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #latNav {
+    display: none !important;
+  }
+
+  #configAudio {
+    display: none !important;
+  }
+
+  #caixaCentral {
+    display: none !important;
+  }
+
+  #principal #feed #main .feedPlaylist .playlists {
+    height: 310px;
+  }
+
+  #principal #feed #main .feedPlaylist .playlists li {
+    width: 23%;
+  }
+
+  #audioBar #musicaPlay {
+    display: none !important;
+  }
+
+  #audioBar {
+    height: 70px !important;
+    width: 100vw !important;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+  }
+
+  #botomIcon {
+    display: unset !important;
+  }
+
+  #botomIcon a {
+    color: white;
+    font-size: 12px;
+  }
+
+  #botomIcon a svg {
+    margin: 10px;
+  }
+
+  #arrowMenu {
+    visibility: hidden;
+  }
+
+  #app {
+    min-width: 100vw;
+  }
+
+  #mobiPlay {
+    height: 63px;
+    width: 95%;
+    margin-top: 78vh;
+    margin-left: 2.5%;
+    position: absolute;
+    opacity: 95%;
+    border-radius: 15px;
+    background-color: #000000e4;
+    display: flex !important;
+    align-items: center;
+    padding: 0 5vw;
+    justify-content: end;
+  }
+
+  #mobibtn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-color: white;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  #principal #feed #main .feedPlaylist .playlists {
+    height: 310px;
+  }
+
+  #principal #feed #main .feedPlaylist .playlists li {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  #principal #feed #main .feedPlaylist .playlists {
+    height: 210px;
+  }
+
+  #principal #feed #main .feedPlaylist .playlists li {
+    width: 48%;
+  }
+
+  #main #feedHeader #playlistsRecentes li {
+    width: 100% !important;
+  }
+
+  #main #feedHeader #playlistsRecentes {
+    height: 240px;
+    overflow: hidden;
+  }
+
+  #principal #feed #main .feedPlaylist .playlists li p {
+    display: none;
+  }
+
+  #principal #feed #main .feedPlaylist .playlists li {
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  #botomIcon a {
+    font-size: 10px;
+    margin: -9px;
+    padding: 18px;
+  }
+  #principal #feed #main .feedPlaylist .playlists li {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #botomIcon a {
+    font-size: 8px;
+    margin: -14px;
+    padding: 18px;
+  }
+}
+
+#mobiPlay {
+  display: none;
+}
+
+#audioBar {
+  width: 100%;
+  height: 90px;
+  background-color: #121212;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#audioBar #musicaPlay {
+  width: 20%;
+}
+
+#audioBar button.icones {
+  background-color: rgba(0, 0, 0, 0);
+  fill: #fff;
+  border: none;
+  opacity: 0.7;
+}
+
+#audioBar button.icones:hover {
+  opacity: 1;
+}
+
+#audioBar button.icones.aleatorio {
+  margin: 5px 15px 5px 5px;
+}
+
+#audioBar button.icones.proximo {
+  margin: 5px 5px 5px 15px;
+}
+
+#audioBar button.icones.proximo svg {
+  margin-bottom: 4px;
+}
+
+#audioBar button.icones.anterior {
+  transform: rotate(180deg);
+  margin: 5px 15px 5px 5px;
+}
+
+#audioBar button.icones.anterior svg {
+  margin-bottom: 4px;
+}
+
+#audioBar button.icones.repetir {
+  margin: 5px 5px 5px 15px;
+}
+
+#audioBar button.icones.legenda,
+#audioBar button.icones.lista,
+#audioBar button.icones.outrosDispositivos {
+  padding-right: 15px;
+}
+
+#audioBar #caixaCentral #caixaSetas button.playPause {
+  width: 35px;
+  height: 35px;
+  border-radius: 24px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+#audioBar #caixaCentral #caixaSetas button.playPause:hover {
+  padding: 2px;
+}
+
+#audioBar #caixaCentral #barraDeProgresso small {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9em;
+  margin: 10px;
+}
+
+#audioBar #caixaCentral #barraDeProgresso input[type="range"] {
+  width: 25rem;
+}
+
+#audioBar #configAudio #volume input[type="range"] {
+  width: 5rem;
+}
+
+#audioBar input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 5rem;
+}
+
+#audioBar input[type="range"]:focus {
+  outline: none;
+}
+
+#audioBar input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  height: 0.25rem;
+}
+
+#audioBar input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -3.2px;
+  background-color: #22c925;
+  border-radius: 0.5rem;
+  height: 0.7rem;
+  width: 0.7rem;
+}
+
+#audioBar input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #22c925;
+  outline-offset: 0.125rem;
+}
+
+#audioBar input[type="range"]::-moz-range-track {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  height: 0.25rem;
+}
+
+#audioBar input[type="range"]::-moz-range-thumb {
+  background-color: #22c925;
+  border: none;
+  border-radius: 0.5rem;
+  height: 0.7rem;
+  width: 0.7rem;
+}
+
+#audioBar input[type="range"]:focus::-moz-range-thumb {
+  outline: 3px solid #22c925;
+  outline-offset: 0.125rem;
+}
+
+#full-screen {
+  background-color: #121212;
+  border: none;
+}
+
+@media only screen and (max-width: 1060px) {
+  #audioBar button.icones svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  #audioBar button.icones.legenda,
+  #audioBar button.icones.lista,
+  #audioBar button.icones.outrosDispositivos {
+    padding-right: 8px;
+  }
+
+  #audioBar #caixaCentral #caixaSetas button.playPause {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+  }
+
+  #audioBar #caixaCentral #caixaSetas button.playPause svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  #audioBar #caixaCentral #barraDeProgresso small {
+    font-size: 0.8em;
+  }
+
+  #audioBar #caixaCentral #barraDeProgresso input[type="range"] {
+    width: 15rem;
+  }
+}
+
+.dropdownMenuButton1-dropContent {
+  display: none;
+  padding:10px;
+  padding-left:15px;
+  background-color: rgba(10, 10, 10, 0.4);
+  margin-top:10px;
+  border-radius: 5px;
+  width:254px;
+  align-self: flex-end;
+  position: absolute;
+  top:30px
+}
+
+.show {
+  display: block;
+}
+
+.dropdownMenuButton1-dropContent > a {
+  text-decoration: none;
+  color:white;
+
+}
+#user_bttn {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./search.css">
+  <link rel="icon" href="./assets/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./script.js" defer></script>
+  <script src="./dropdown.js" defer></script>
+</head>
+
+
+<body>
+
+  <div id="app" class="d-flex flex-column">
+
+    <div id="principal" class="d-flex">
+
+
+      <nav id="latNav" class="w-100 pt-4 d-flex flex-column">
+
+        <!-- Start of logo -->
+
+        <a href="./index.html" class="d-flex px-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-spotify"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z" />
+          </svg>
+          <span class="fw-semibold ms-2" style="font-size: 1.5em;">Spotify</span>
+        </a>
+
+        <!-- End of logo -->
+
+
+
+        <!-- Start of side bar-->
+
+        <ul class="nav flex-column px-2 my-4">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link "><svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                <path
+                  d="M13.5 1.515a3 3 0 00-3 0L3 5.845a2 2 0 00-1 1.732V21a1 1 0 001 1h6a1 1 0 001-1v-6h4v6a1 1 0 001 1h6a1 1 0 001-1V7.577a2 2 0 00-1-1.732l-7.5-4.33z">
+                </path>
+              </svg> Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                <path
+                  d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 101.414-1.414l-4.344-4.344a9.157 9.157 0 002.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z">
+                </path>
+              </svg> Search</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                <path
+                  d="M14.5 2.134a1 1 0 011 0l6 3.464a1 1 0 01.5.866V21a1 1 0 01-1 1h-6a1 1 0 01-1-1V3a1 1 0 01.5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1zm6 0a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1z">
+                </path>
+              </svg> Your Library</a>
+          </li>
+        </ul>
+
+        <div id="underList">
+          <button>
+            <div class="plus_bttn">
+              <svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16">
+                <path
+                  d="M15.25 8a.75.75 0 01-.75.75H8.75v5.75a.75.75 0 01-1.5 0V8.75H1.5a.75.75 0 010-1.5h5.75V1.5a.75.75 0 011.5 0v5.75h5.75a.75.75 0 01.75.75z">
+                </path>
+              </svg>
+            </div>
+            Create Playlist
+          </button>
+
+          <button>
+            <div class="heart_bttn">
+              <svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16">
+                <path
+                  d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z">
+                </path>
+              </svg>
+            </div>
+            Liked Songs
+          </button>
+        </div>
+
+        <!-- End of side bar-->
+
+
+
+        <hr class="mx-4 mb-0 mt-2">
+
+        <!-- Start of playlists in sidebar-->
+
+        <ul id="playlistSidebar" class="nav px-2">
+          <li class="nav-item"><a href="https://open.spotify.com/playlist/3DCIpP8UPdnLnUGsuEsr97"
+              class="nav-link"><br>sleep deprived</a></li>
+          <li class="nav-item"><a href="https://open.spotify.com/playlist/5lwd9A96hNLfiYCLKBQRN2"
+              class="nav-link">adrenaline rush</a></li>
+          <li class="nav-item"><a href="https://open.spotify.com/playlist/0q0SddIoqUIMGm3Sgz3oMi"
+              class="nav-link">impulse</a></li>
+          <li class="nav-item"><a href="https://open.spotify.com/playlist/5ZPjSoSwQs5QVlZDZjfiFI" class="nav-link">sixth
+              gear</a></li>
+          <li class="nav-item"><a href="https://open.spotify.com/playlist/3zA5kLtGx3ghhhdoO7mdvF" class="nav-link">3:14
+              am</a></li>
+          <li class="nav-item"><a href="https://open.spotify.com/playlist/60HGr7YPE45JP6xaTWSbg4"
+              class="nav-link">serenity</a></li>
+        </ul>
+
+        <!-- End of playlists in sidebar-->
+
+
+        <!-- Start of Install App Button-->
+
+        <a href="#" id="installApp" class="d-block px-4 py-2">
+          <svg role="img" height="24" width="24" viewBox="0 0 24 24">
+            <path
+              d="M12 3a9 9 0 100 18 9 9 0 000-18zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z">
+            </path>
+            <path
+              d="M12 6.05a1 1 0 011 1v7.486l1.793-1.793a1 1 0 111.414 1.414L12 18.364l-4.207-4.207a1 1 0 111.414-1.414L11 14.536V7.05a1 1 0 011-1z">
+            </path>
+          </svg> Installl App
+        </a>
+      </nav>
+
+      <!-- End of Install App Button-->
+
+
+      <!-- Main Content -->
+      <div id="feed" class="w-100">
+
+        <nav id="topNav" class="d-flex justify-content-between  px-4 py-2">
+
+          <!-- Start of arrows -->
+
+          <div id="arrowMenu">
+            <a href="./index.html"><button><svg role="img" height="24" width="24" class="Svg-ytk21e-0 gFcOie IYDlXmBmmUKHveMzIPCF"
+                viewBox="0 0 24 24">
+                <path
+                  d="M15.957 2.793a1 1 0 010 1.414L8.164 12l7.793 7.793a1 1 0 11-1.414 1.414L5.336 12l9.207-9.207a1 1 0 011.414 0z">
+                </path>
+              </svg></button></a>
+            <button><svg role="img" height="24" width="24" class="Svg-ytk21e-0 gFcOie IYDlXmBmmUKHveMzIPCF"
+                viewBox="0 0 24 24">
+                <path
+                  d="M8.043 2.793a1 1 0 000 1.414L15.836 12l-7.793 7.793a1 1 0 101.414 1.414L18.664 12 9.457 2.793a1 1 0 00-1.414 0z">
+                </path>
+              </svg></button>
+              <div class="div--hun">
+                <form class="form--hun"><input class="Type__TypeElement-goli3j-0 cPwEdQ QO9loc33XC50mMRUCIvf" maxlength="800" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="What do you want to listen to?" data-testid="search-input" value="" style="color: rgb(0, 0, 0);"></form>
+              </div>
+          </div>
+
+          <!-- End of arrows-->
+        
+          <div id="btnTopNav" class="d-flex">
+
+            <!-- Start of user profile -->
+            <div class="dropdown ms-3" id="user_bttn">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="imgUsuario bg-secondary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                  </svg>
+                </div>
+                Taufeeq Riyaz
+              </button>
+              <div class="dropdownMenuButton1-dropContent">
+                <a href="./login.html">Log Out</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- End of user profile -->
+
+
+        <!-- feed do conteudo principal -->
+        <main id="main" class="p-4">
+
+          <!-- seção inicial (header -->
+          <section id="feedHeader">
+
+            
+
+            <section class="feedPlaylist">
+              <h4 class="mb-3"><a><b>Recent Searches</b></a></h4>
+              
+              <br>
+              <ul class="playlists">
+                <li>
+                  <img src="./assets/7.jpeg" >
+                  <button type="button" class="btn me-3"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                      <path
+                        d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
+                      </path>
+                    </svg></button>
+                  <span>Mood Booster</span>
+                  <p><br>By Spotify</p>
+                </li>
+  
+                <li>
+                  <img src="./assets/8.jpeg" >
+                  <button type="button" class="btn me-3"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                      <path
+                        d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
+                      </path>
+                    </svg></button>
+                  <span>Chill Bro</span>
+                  <p><br>By Spotify</p>
+                </li>
+  
+                <li>
+                  <img src="./assets/9.jpeg" >
+                  <button type="button" class="btn me-3"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                      <path
+                        d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
+                      </path>
+                    </svg></button>
+                  <span>Moody Mix</span>
+                  <p><br>By Spotify</p>
+                </li>
+  
+                <li>
+                  <img src="./assets/10.jpeg" >
+                  <button type="button" class="btn me-3"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                      <path
+                        d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
+                      </path>
+                    </svg></button>
+                  <span>Latin Mix</span>
+                  <p><br>By Spotify</p>
+                </li>
+  
+                <li>
+                  <img src="./assets/11.jpeg" >
+                  <button type="button" class="btn me-3"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                      <path
+                        d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
+                      </path>
+                    </svg></button>
+                  <span>Hindi Mix</span>
+                  <p><br>By Spotify</p>
+                </li>
+  
+                <li>
+                  <img src="./assets/12.jpeg" >
+                  <button type="button" class="btn me-3"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                      <path
+                        d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
+                      </path>
+                    </svg></button>
+                  <span>2010s Mix</span>
+                  <p><br>By Spotify</p>
+                </li>
+              </ul>
+            </section>
+           
+          
+
+          <!-- Made for you -->
+          <section class="feedPlaylist">
+            <h4 class="mb-3"><a href="#">Browse all</a></h4>
+
+            
+            <ul class="playlists">
+                <li>
+                  <img src="./images/1.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/2.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/3.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/4.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/5.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/6.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>               
+              </ul>
+
+              <ul class="playlists">
+                <li>
+                  <img src="./images/7.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/8.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/9.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/10.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/11.jpg" :alt="sleep deprived" class="image-hun">
+                  </li>
+                  <li>
+                  <img src="./images/12.jpg" :alt="sleep deprived" class="image-hun">
+                   </li>
+                 </li>
+              </ul>
+
+              <ul class="playlists">
+                 <li>
+                  <img src="./images/12.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/13.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/14.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/15.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/16.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/17.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+              </ul>
+
+              <ul class="playlists">
+                 <li>
+                  <img src="./images/18.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                  <img src="./images/19.jpg" :alt="sleep deprived" class="image-hun">
+                 </li>
+                 <li>
+                 <img src="./images/20.jpg" :alt="sleep deprived" class="image-hun">
+                </li>
+                <li>
+                 <img src="./images/1.jpg" :alt="sleep deprived" class="image-hun">
+                </li>
+                <li>
+                 <img src="./images/2.jpg" :alt="sleep deprived" class="image-hun">
+                </li>
+                <li>
+                 <img src="./images/3.jpg" :alt="sleep deprived" class="image-hun">
+                </li>
+              </ul>
+                     
+          </section>
+
+         <script src="https://kit.fontawesome.com/55973b77b0.js" crossorigin="anonymous"></script>
+  <script>
+    function enabledisable(element) {
+      console.log(element.style)
+      if (element.style.fill != "rgb(29, 185, 84)") {
+        element.style.setProperty('fill', '#1db954');
+      } else {
+        element.style.setProperty('fill', '#fff');
+      }
+    }
+  </script>
+</body>
+
+</html>
