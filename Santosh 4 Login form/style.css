@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    color: #781C68;
+}
+
+body p{
+    color: #FFD39A(19, 18, 18);
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+input,button{
+    color: rgb(126, 123, 123);
+
+}
+
+h3,h4{
+    margin: 0;
+    text-align: center;
+}
+
+:focus{
+    outline: none;
+}
+
+.wrapper{
+    min-height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.inner{
+    padding: 20px;
+    background:rgba(247, 218, 143, 0.789);
+    max-width: 850px;
+    border-radius: 15px;
+    margin: 50px;
+    display: flex;
+}
+
+.inner form{
+    width: 100%;
+    padding: 36px 36px 36px 20px;
+}
+.inner h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    /*.inner p for gap if drkr add here */
+ 
+}
+
+.form-wrapper input{
+    width: 100%;
+    background: rgba(1, 3, 31, 0);
+}
+
+
+.form-control{
+    border: 1px solid #333;
+    border: none;
+    border-bottom: 1px solid #333;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding-right: 0;
+}
+
+button{
+    border: none;
+    width: 164px;
+    height: 51px;
+    margin: auto;
+    margin-top: 40px;
+    background: #781C68;
+    background-image: -webkit-linear-gradient(top, #781C68, #2980b9);
+    background-image: -moz-linear-gradient(top, #781C68, #2980b9);
+    background-image: -ms-linear-gradient(top, #781C68, #2980b9);
+    background-image: -o-linear-gradient(top, #781C68, #2980b9);
+    background-image: linear-gradient(to bottom, #781C68, #2980b9);
+    border-radius: 15px;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+}
+
+.header{
+    min-height: 100vh;
+    width: auto;
+    background:linear-gradient(rgb(130, 47, 47),#333);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
